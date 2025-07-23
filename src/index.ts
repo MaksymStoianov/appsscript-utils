@@ -29,4 +29,5 @@ export { requireNonNull } from "./requireNonNull";
 export { requireString } from "./requireString";
 export { requireValidEmail } from "./requireValidEmail";
 
+export { toInteger } from "./toInteger";
 export { toString } from "./toString";
