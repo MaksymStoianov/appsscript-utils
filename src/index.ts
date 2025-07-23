@@ -37,4 +37,6 @@ export { requireValidEmail } from "./requireValidEmail";
 export { toInteger } from "./toInteger";
 export { toString } from "./toString";
 
+export { parseJson } from "./parseJson";
+
 export { versionCompare } from "./versionCompare";
