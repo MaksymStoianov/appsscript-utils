@@ -3,3 +3,4 @@ export { EmptyStringException } from "./EmptyStringException";
 
 export { RuntimeException } from "./RuntimeException";
 export { IllegalArgumentException } from "./IllegalArgumentException";
+export { NullPointerException } from "./NullPointerException";
