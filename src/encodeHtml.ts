@@ -1,10 +1,10 @@
 import { isString } from "@/isString";
 
 /**
- * Кодирует символы строки (от `U+00A0` до `U+9999`) в соответствующие HTML-сущности.
+ * Encodes characters in a string (from `U+00A0` to `U+9999`) into their corresponding HTML entities.
  *
- * @param   value - Строка для кодирования.
- * @returns Строка с закодированными в HTML-сущности символами.
+ * @param   value - The string to encode.
+ * @returns The string with HTML-encoded characters.
  * @since   0.1.0
  * @version 0.1.0
  */
