@@ -12,6 +12,7 @@ export { isNull } from "./isNull";
 export { isNumber } from "./isNumber";
 export { isNumberLike } from "./isNumberLike";
 export { isObject } from "./isObject";
+export { isObjectLike } from "./isObjectLike";
 export { isScalar } from "./isScalar";
 export { isString } from "./isString";
 export { isSymbol } from "./isSymbol";
