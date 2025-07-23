@@ -19,6 +19,7 @@ export { isSymbol } from "./isSymbol";
 export { isUndefined } from "./isUndefined";
 
 export { nonNull } from "./nonNull";
+export { nonNumber } from "./nonNumber";
 export { nonString } from "./nonString";
 
 export { requireString } from "./requireString";
