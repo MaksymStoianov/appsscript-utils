@@ -1,4 +1,5 @@
 export { isNumber } from "./isNumber";
+export { isNumberLike } from "./isNumberLike";
 export { isScalar } from "./isScalar";
 export { isString } from "./isString";
 export { isSymbol } from "./isSymbol";
