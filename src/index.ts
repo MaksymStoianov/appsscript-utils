@@ -1,3 +1,4 @@
+export { isLength } from "./isLength";
 export { isNil } from "./isNil";
 export { isNull } from "./isNull";
 export { isNumber } from "./isNumber";
