@@ -2,6 +2,10 @@ export { decodeHtml } from "./decodeHtml";
 
 export { encodeHtml } from "./encodeHtml";
 
+export { escapeHtml } from "./escapeHtml";
+export { escapeRegExp } from "./escapeRegExp";
+export { escapeXml } from "./escapeXml";
+
 export { isBoolean } from "./isBoolean";
 export { isEmail } from "./isEmail";
 export { isEmpty } from "./isEmpty";
