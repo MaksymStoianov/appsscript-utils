@@ -1,3 +1,4 @@
+import { isNull } from "./isNull";
 import { isUndefined } from "./isUndefined";
 
 /**
@@ -7,5 +8,5 @@ import { isUndefined } from "./isUndefined";
  * @returns `true` if the value is `null` or `undefined`; otherwise, `false`.
  */
 export function isNil(value: unknown): value is null | undefined {
-  return isUndefined(value) || value === null;
+  return isUndefined(value) || isNull(value);
 }
