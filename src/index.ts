@@ -3,6 +3,7 @@ export { decodeHtml } from "./decodeHtml";
 export { encodeHtml } from "./encodeHtml";
 
 export { isBoolean } from "./isBoolean";
+export { isEmail } from "./isEmail";
 export { isEmpty } from "./isEmpty";
 export { isException } from "./isException";
 export { isFunction } from "./isFunction";
