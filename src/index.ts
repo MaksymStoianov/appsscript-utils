@@ -18,6 +18,8 @@ export { isString } from "./isString";
 export { isSymbol } from "./isSymbol";
 export { isUndefined } from "./isUndefined";
 
+export { nonNull } from "./nonNull";
+
 export { requireString } from "./requireString";
 
 export { toString } from "./toString";
