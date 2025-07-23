@@ -1,3 +1,4 @@
+export { isNil } from "./isNil";
 export { isNumber } from "./isNumber";
 export { isNumberLike } from "./isNumberLike";
 export { isScalar } from "./isScalar";
