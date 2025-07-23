@@ -2,6 +2,9 @@ import { RuntimeException } from "./RuntimeException";
 
 /**
  * Represents an exception thrown when a method has been passed an illegal or inappropriate argument.
+ *
+ * @since   0.1.0
+ * @version 0.1.0
  */
 export class IllegalArgumentException extends RuntimeException {
   constructor(message?: string | undefined) {
