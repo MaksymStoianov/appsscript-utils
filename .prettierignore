@@ -1,0 +1,12 @@
+# Ignore artifacts:
+dist
+build
+coverage
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+*.min.js
+**/output.css

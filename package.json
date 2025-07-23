@@ -1,0 +1,49 @@
+{
+  "name": "appsscript-utils",
+  "version": "0.0.0",
+  "description": "Utilities and types for Google Apps Script development.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "vitest",
+    "format": "prettier --write .",
+    "lint": "eslint --fix .",
+    "test": "vitest run",
+    "build": "rm -rf dist/* && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksymStoianov/appsscript-utils.git"
+  },
+  "keywords": [
+    "google-apps-script",
+    "googleappsscript",
+    "appsscript",
+    "gas",
+    "typescript",
+    "utilities"
+  ],
+  "author": "Maksym Stoianov <Stoianov.Maksym@gmail.com>",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/MaksymStoianov/appsscript-utils/issues"
+  },
+  "homepage": "https://github.com/MaksymStoianov/appsscript-utils#readme",
+  "devDependencies": {
+    "@eslint/json": "^0.13.0",
+    "@eslint/markdown": "^7.0.0",
+    "@types/google-apps-script": "^1.0.99",
+    "@types/node": "^24.0.15",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-googleappsscript": "^1.0.5",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2"
+  }
+}

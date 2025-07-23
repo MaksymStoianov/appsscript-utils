@@ -1,0 +1,31 @@
+# https://github.com/googleapis/release-please-action
+name: release-please
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  issues: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        # https://nodejs.org/en/about/releases/
+        node-version: [20]
+    timeout-minutes: 8
+
+    steps:
+      - uses: googleapis/release-please-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          versioning-strategy: auto
+          changelog-path: CHANGELOG.md
