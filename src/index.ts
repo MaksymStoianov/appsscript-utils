@@ -25,6 +25,7 @@ export { nonNumber } from "./nonNumber";
 export { nonString } from "./nonString";
 
 export { requireNonEmptyString } from "./requireNonEmptyString";
+export { requireNonNull } from "./requireNonNull";
 export { requireString } from "./requireString";
 
 export { toString } from "./toString";
