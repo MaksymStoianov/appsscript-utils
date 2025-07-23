@@ -39,4 +39,5 @@ export { toString } from "./toString";
 
 export { parseJson } from "./parseJson";
 
+export { hashCode } from "./hashCode";
 export { versionCompare } from "./versionCompare";
