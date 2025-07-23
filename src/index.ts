@@ -35,3 +35,5 @@ export { requireValidEmail } from "./requireValidEmail";
 
 export { toInteger } from "./toInteger";
 export { toString } from "./toString";
+
+export { versionCompare } from "./versionCompare";
