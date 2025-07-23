@@ -21,6 +21,7 @@ export { isSymbol } from "./isSymbol";
 export { isUndefined } from "./isUndefined";
 export { isValidLocale } from "./isValidLocale";
 export { isValidSlug } from "./isValidSlug";
+export { isValidVersion } from "./isValidVersion";
 
 export { nonNil } from "./nonNil";
 export { nonNull } from "./nonNull";
