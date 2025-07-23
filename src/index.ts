@@ -40,6 +40,7 @@ export { requireValidEmail } from "./requireValidEmail";
 
 export { toInteger } from "./toInteger";
 export { toString } from "./toString";
+export { toCamelCase } from "./toCamelCase";
 
 export { parseJson } from "./parseJson";
 
