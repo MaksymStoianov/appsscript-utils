@@ -10,8 +10,7 @@ import { isString } from "@/isString";
  */
 export function encodeHtml(value: string): string {
   if (!isString(value)) {
-    // TODO: exception
-    throw new TypeError();
+    throw new TypeError("Input value must be a string.");
   }
 
   return value.replace(
