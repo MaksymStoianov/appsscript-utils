@@ -2,6 +2,7 @@ export { decodeHtml } from "./decodeHtml";
 
 export { encodeHtml } from "./encodeHtml";
 
+export { isBoolean } from "./isBoolean";
 export { isEmpty } from "./isEmpty";
 export { isLength } from "./isLength";
 export { isNil } from "./isNil";
