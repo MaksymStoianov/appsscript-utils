@@ -4,6 +4,7 @@ export { encodeHtml } from "./encodeHtml";
 
 export { isBoolean } from "./isBoolean";
 export { isEmpty } from "./isEmpty";
+export { isFunction } from "./isFunction";
 export { isLength } from "./isLength";
 export { isNil } from "./isNil";
 export { isNull } from "./isNull";
