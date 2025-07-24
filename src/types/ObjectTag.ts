@@ -2,7 +2,9 @@
  * Enum representing `Object#toString` result references in uppercase.
  * Provides a standardized way to identify object types.
  *
- * @enum {string}
+ * @enum
+ * @since   0.1.0
+ * @version 0.1.0
  */
 export enum ObjectTag {
   ARGUMENTS = "[object Arguments]",
