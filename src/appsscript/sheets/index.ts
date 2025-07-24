@@ -11,3 +11,4 @@ export { isGridRangeSameDimensions } from "./isGridRangeSameDimensions";
 export { isRange } from "./isRange";
 export { isRichTextValue } from "./isRichTextValue";
 export { isSheet } from "./isSheet";
+export { isSpreadsheet } from "./isSpreadsheet";
