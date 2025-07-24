@@ -15,3 +15,4 @@ export { isSpreadsheet } from "./isSpreadsheet";
 export { isTextStyle } from "./isTextStyle";
 export { isValidSheetName } from "./isValidSheetName";
 export { isValidSpreadsheetId } from "./isValidSpreadsheetId";
+export { parseA1Notation } from "./parseA1Notation";
