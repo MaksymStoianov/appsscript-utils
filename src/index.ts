@@ -6,6 +6,7 @@ export { escapeHtml } from "./escapeHtml";
 export { escapeRegExp } from "./escapeRegExp";
 export { escapeXml } from "./escapeXml";
 
+export { is2DArray } from "./is2DArray";
 export { isBoolean } from "./isBoolean";
 export { isEmail } from "./isEmail";
 export { isEmpty } from "./isEmpty";
