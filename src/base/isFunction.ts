@@ -7,6 +7,8 @@ import { ObjectTag } from "./types";
  *
  * @param   value - The value to check.
  * @returns `true` if the value is a function; otherwise, `false`.
+ * @since   0.1.0
+ * @version 0.1.0
  */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 export function isFunction(value: unknown): value is Function {

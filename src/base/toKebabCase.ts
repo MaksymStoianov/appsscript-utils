@@ -1,18 +1,7 @@
-/**
- * Defines the options for the `toKebabCase` function.
- */
-interface ToKebabCaseOptions {
-  /**
-   * If `true` (default: `false`), removes any characters from the final string
-   * that are not lowercase letters, numbers, or hyphens. This results in a strict
-   * kebab-case format. If `false`, other characters from the input might be preserved.
-   */
-  clean?: boolean;
+import { requireNonEmptyString } from "./requireNonEmptyString";
 
-  /**
-   * If `true` (default: `false`), trims leading and trailing whitespace
-   * from the original input string before conversion.
-   */
+interface Options {
+  clean?: boolean;
   trim?: boolean;
 }
 
@@ -41,20 +30,20 @@ interface ToKebabCaseOptions {
  * console.log(result); // hello-world-how-are-you
  * ```
  *
- * @param   input - The input string to convert.
+ * @param   value - The input string to convert.
  * @param   [options] - Optional configuration options.
  * @returns The string converted to kebab-case.
+ * @since   0.1.0
+ * @version 0.1.0
  */
-export function toKebabCase(
-  input: string,
-  options: ToKebabCaseOptions = {}
-): string {
-  const effectiveOptions: Required<ToKebabCaseOptions> = {
+export function toKebabCase(value: string, options: Options = {}): string {
+  const effectiveOptions: Required<Options> = {
     clean: false,
     trim: false,
     ...options
   };
-  let result = input
+
+  let result = requireNonEmptyString(value)
     .replace(/[\s_]/g, "-")
     .replace(/([a-z])([A-Z])/g, "$1-$2")
     .toLowerCase();

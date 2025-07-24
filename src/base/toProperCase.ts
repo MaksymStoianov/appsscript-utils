@@ -33,7 +33,7 @@ interface Options {
  * @since   0.1.0
  * @version 0.1.0
  */
-export function toProperCase(value: string, options: Options = {}) {
+export function toProperCase(value: string, options: Options = {}): string {
   const effectiveOptions: Required<Options> = {
     trim: false,
     ...options

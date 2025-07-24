@@ -1,4 +1,6 @@
-import { isString } from "@/isString";
+import { EmptyStringException } from "./exceptions";
+import { isEmpty } from "./isEmpty";
+import { isString } from "./isString";
 
 /**
  * Encodes characters in a string (from `U+00A0` to `U+9999`) into their corresponding HTML entities.
@@ -9,8 +11,8 @@ import { isString } from "@/isString";
  * @version 0.1.0
  */
 export function encodeHtml(value: string): string {
-  if (!isString(value)) {
-    throw new TypeError("Input value must be a string.");
+  if (!isString(value) || isEmpty(value)) {
+    throw new EmptyStringException();
   }
 
   return value.replace(

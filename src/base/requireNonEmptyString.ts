@@ -9,6 +9,8 @@ import { isString } from "./isString";
  * @param   [message] - Optional. A custom error message if the validation fails.
  * @returns The validated non-empty string.
  * @throws  {EmptyStringException} If the value is `null`, `undefined`, or an empty string after trimming.
+ * @since   0.1.0
+ * @version 0.1.0
  */
 export function requireNonEmptyString(
   value: string | null | undefined,

@@ -1,3 +1,4 @@
+import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
 
 /**
@@ -10,6 +11,6 @@ import { isString } from "./isString";
  */
 export function isValidSlug(value: string): boolean {
   return (
-    isString(value) && value.length > 0 && /^[a-z][0-9a-z_-]*$/i.test(value)
+    isString(value) && !isEmpty(value) && /^[a-z][0-9a-z_-]*$/i.test(value)
   );
 }

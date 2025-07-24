@@ -1,4 +1,4 @@
-import { requireNonEmptyString } from "@/requireNonEmptyString";
+import { requireNonEmptyString } from "./requireNonEmptyString";
 
 interface Options {
   trim?: boolean;
@@ -24,7 +24,7 @@ interface Options {
  * @since   0.1.0
  * @version 0.1.0
  */
-export function toLowerCase(value: string, options: Options = {}) {
+export function toLowerCase(value: string, options: Options = {}): string {
   const effectiveOptions: Required<Options> = {
     trim: false,
     ...options

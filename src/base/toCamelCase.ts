@@ -1,17 +1,7 @@
-/**
- * Defines the options for the `toCamelCase` function.
- */
-interface ToCamelCaseOptions {
-  /**
-   * If `true` (default), removes any characters that are not letters or numbers
-   * after the initial word transformation.
-   */
-  clean?: boolean;
+import { requireNonEmptyString } from "./requireNonEmptyString";
 
-  /**
-   * If `true` (default), converts the first letter of the resulting string to lowercase.
-   * If `false`, the first letter will remain uppercase (e.g., "HelloWorld").
-   */
+interface Options {
+  clean?: boolean;
   firstWordToLowerCase?: boolean;
 }
 
@@ -40,23 +30,25 @@ interface ToCamelCaseOptions {
  * console.log(result); // HelloWorld
  * ```
  *
- * @param   input - The input string to convert.
+ * @param   value - The input string to convert.
  * @param   [options] - Optional configuration options.
  * @returns The string converted to camelCase.
+ * @since   0.1.0
+ * @version 0.1.0
  */
-export function toCamelCase(input: string, options: ToCamelCaseOptions = {}) {
-  const effectiveOptions: Required<ToCamelCaseOptions> = {
+export function toCamelCase(value: string, options: Options = {}): string {
+  const effectiveOptions: Required<Options> = {
     clean: true,
     firstWordToLowerCase: true,
     ...options
   };
 
-  let result = input.replace(
-    /\b\w+\b/g,
-    match => match.charAt(0).toUpperCase() + match.slice(1).toLowerCase()
-  );
-
-  result = result.replace(/[\s-_]+/g, "");
+  let result = requireNonEmptyString(value)
+    .replace(
+      /\b\w+\b/g,
+      match => match.charAt(0).toUpperCase() + match.slice(1).toLowerCase()
+    )
+    .replace(/[\s-_]+/g, "");
 
   if (effectiveOptions.clean) {
     result = result.replace(/[^a-zA-Z0-9]/g, "");

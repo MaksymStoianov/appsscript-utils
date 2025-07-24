@@ -1,3 +1,5 @@
+import { EmptyStringException } from "./exceptions";
+import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
 
 /**
@@ -9,8 +11,8 @@ import { isString } from "./isString";
  * @version 0.2.0
  */
 export function decodeHtml(value: string): string {
-  if (!isString(value)) {
-    throw new TypeError("Input value must be a string.");
+  if (!isString(value) || isEmpty(value)) {
+    throw new EmptyStringException();
   }
 
   return value

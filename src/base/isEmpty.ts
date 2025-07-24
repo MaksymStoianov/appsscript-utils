@@ -16,6 +16,8 @@ import { toString } from "./toString";
  *
  * @param   value - The value to check for emptiness.
  * @returns `true` if the value is empty; otherwise, `false`.
+ * @since   0.1.0
+ * @version 0.1.0
  */
 export function isEmpty(value: unknown): boolean {
   if (isNil(value)) {

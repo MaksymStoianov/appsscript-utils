@@ -1,8 +1,8 @@
-export * from "../types";
-export * from "../exceptions";
-export * from "../interfaces";
-export * from "../path";
-export * from "../appsscript";
+export * from "./types";
+export * from "./exceptions";
+export * from "./interfaces";
+export * from "./path";
+export * from "./appsscript";
 
 export { decodeHtml } from "./decodeHtml";
 
