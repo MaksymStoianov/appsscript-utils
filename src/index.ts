@@ -25,6 +25,7 @@ export { isScalar } from "./isScalar";
 export { isString } from "./isString";
 export { isSymbol } from "./isSymbol";
 export { isUndefined } from "./isUndefined";
+export { isUrl } from "./isUrl";
 export { isValidLocale } from "./isValidLocale";
 export { isValidSlug } from "./isValidSlug";
 export { isValidVersion } from "./isValidVersion";
