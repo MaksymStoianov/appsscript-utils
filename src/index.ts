@@ -44,6 +44,7 @@ export { toCamelCase } from "./toCamelCase";
 export { toKebabCase } from "./toKebabCase";
 export { toLowerCase } from "./toLowerCase";
 export { toProperCase } from "./toProperCase";
+export { toSnakeCase } from "./toSnakeCase";
 
 export { parseJson } from "./parseJson";
 
