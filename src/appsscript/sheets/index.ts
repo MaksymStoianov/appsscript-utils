@@ -13,3 +13,4 @@ export { isRichTextValue } from "./isRichTextValue";
 export { isSheet } from "./isSheet";
 export { isSpreadsheet } from "./isSpreadsheet";
 export { isTextStyle } from "./isTextStyle";
+export { isValidSheetName } from "./isValidSheetName";
