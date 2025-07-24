@@ -4,3 +4,5 @@ export { doGridRangesIntersect } from "./doGridRangesIntersect";
 export { getColumnIndexByLetter } from "./getColumnIndexByLetter";
 export { getColumnLetterByIndex } from "./getColumnLetterByIndex";
 export { getSheetById } from "./getSheetById";
+
+export { isCellGridRange } from "./isCellGridRange";
