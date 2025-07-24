@@ -51,6 +51,7 @@ export { toUpperCase } from "./toUpperCase";
 
 export { parseJson } from "./parseJson";
 
+export { chunk } from "./chunk";
 export { hashCode } from "./hashCode";
 export { transpose } from "./transpose";
 export { versionCompare } from "./versionCompare";
