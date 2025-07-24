@@ -8,3 +8,4 @@ export { getSheetById } from "./getSheetById";
 export { isCellGridRange } from "./isCellGridRange";
 export { isGridRangeContainedIn } from "./isGridRangeContainedIn";
 export { isGridRangeSameDimensions } from "./isGridRangeSameDimensions";
+export { isRange } from "./isRange";
