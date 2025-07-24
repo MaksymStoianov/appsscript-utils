@@ -1,15 +1,13 @@
 import { appendColumns, Options } from "./appendColumns";
 
 /**
- * Appends a single column to the right of the current data area on a sheet.
+ * Appends a single column to the right of the current data area on a [`sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).
  * If a cell's content starts with `=`, it is interpreted as a formula.
  *
- * @param       sheet - The Google Apps Script `Sheet` object to which the column will be appended.
+ * @param       sheet - The Google Apps Script {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object to which the column will be appended.
  * @param       values - A 1D array containing the data for the single column.
  * @param       [options] - Additional parameters to customize the method's behavior.
- * If `true` for `afterFrozenColumns`, the column will be added immediately
- * to the right of any frozen columns, if they exist.
- * @returns     The modified `GoogleAppsScript.Spreadsheet.Sheet` object, allowing for method chaining.
+ * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
  * @since       0.1.0
  * @version     1.4.0
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
