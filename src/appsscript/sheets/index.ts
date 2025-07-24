@@ -1,7 +1,9 @@
 export * from "./types";
 
-export { appendColumns } from "./appendColumns";
 export { appendColumn } from "./appendColumn";
+export { appendColumns } from "./appendColumns";
+export { appendRow } from "./appendRow";
+export { appendRows } from "./appendRows";
 export { doGridRangesIntersect } from "./doGridRangesIntersect";
 export { getColumnIndexByLetter } from "./getColumnIndexByLetter";
 export { getColumnLetterByIndex } from "./getColumnLetterByIndex";
