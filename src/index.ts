@@ -8,6 +8,7 @@ export { escapeXml } from "./escapeXml";
 
 export { is2DArray } from "./is2DArray";
 export { isBoolean } from "./isBoolean";
+export { isConsistent2DArray } from "./isConsistent2DArray";
 export { isEmail } from "./isEmail";
 export { isEmpty } from "./isEmpty";
 export { isException } from "./isException";
