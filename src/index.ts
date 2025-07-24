@@ -43,6 +43,7 @@ export { toString } from "./toString";
 export { toCamelCase } from "./toCamelCase";
 export { toKebabCase } from "./toKebabCase";
 export { toLowerCase } from "./toLowerCase";
+export { toProperCase } from "./toProperCase";
 
 export { parseJson } from "./parseJson";
 
