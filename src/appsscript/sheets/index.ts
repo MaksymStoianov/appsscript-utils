@@ -12,3 +12,4 @@ export { isRange } from "./isRange";
 export { isRichTextValue } from "./isRichTextValue";
 export { isSheet } from "./isSheet";
 export { isSpreadsheet } from "./isSpreadsheet";
+export { isTextStyle } from "./isTextStyle";
