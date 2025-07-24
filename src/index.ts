@@ -42,6 +42,7 @@ export { toInteger } from "./toInteger";
 export { toString } from "./toString";
 export { toCamelCase } from "./toCamelCase";
 export { toKebabCase } from "./toKebabCase";
+export { toLowerCase } from "./toLowerCase";
 
 export { parseJson } from "./parseJson";
 
