@@ -1,8 +1,4 @@
 export * from "./types";
-export * from "./exceptions";
-export * from "./interfaces";
-export * from "./path";
-export * from "./appsscript";
 
 export { decodeHtml } from "./decodeHtml";
 
@@ -57,6 +53,7 @@ export { toSnakeCase } from "./toSnakeCase";
 export { toUpperCase } from "./toUpperCase";
 
 export { parseJson } from "./parseJson";
+export { stringifyJson } from "./stringifyJson";
 
 export { chunk } from "./chunk";
 export { hashCode } from "./hashCode";
