@@ -11,7 +11,7 @@ one place.
 Functions specifically designed for Google Apps Script environments, including utilities for working with spreadsheets.
 
 | Function               | Description                                    |
-|:-----------------------|:-----------------------------------------------|
+| :--------------------- | :--------------------------------------------- |
 | `checkMultipleAccount` | Checks if multiple Google accounts are in use. |
 | `getByteSize`          | Returns the size of a string in bytes.         |
 | `isHtmlOutput`         | Checks if an object is an `HtmlOutput`.        |
@@ -23,7 +23,7 @@ Functions specifically designed for Google Apps Script environments, including u
 A collection of functions to simplify working with Google Sheets.
 
 | Function                    | Description                                                        |
-|:----------------------------|:-------------------------------------------------------------------|
+| :-------------------------- | :----------------------------------------------------------------- |
 | `appendColumn`              | Appends a single column of data to the sheet.                      |
 | `appendColumns`             | Appends multiple columns of data to the sheet.                     |
 | `appendRow`                 | Appends a single row of data to the sheet.                         |
@@ -56,7 +56,7 @@ A collection of functions to simplify working with Google Sheets.
 General utility functions that can be useful in any JavaScript/TypeScript project.
 
 | Function                | Description                                                                    |
-|:------------------------|:-------------------------------------------------------------------------------|
+| :---------------------- | :----------------------------------------------------------------------------- |
 | `chunk`                 | Splits an array into chunks of a specified size.                               |
 | `decodeHtml`            | Decodes HTML entities.                                                         |
 | `encodeHtml`            | Encodes a string for safe use in HTML.                                         |
@@ -114,7 +114,7 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 A set of custom exception classes for more specific error handling.
 
 | Exception                     | Description                         |
-|:------------------------------|:------------------------------------|
+| :---------------------------- | :---------------------------------- |
 | `EmptyStringException`        | Exception for empty strings.        |
 | `Exception`                   | Base exception class.               |
 | `IllegalArgumentException`    | Exception for invalid arguments.    |
@@ -127,7 +127,7 @@ A set of custom exception classes for more specific error handling.
 Descriptions of general interfaces.
 
 | Interface  | Description              |
-|:-----------|:-------------------------|
+| :--------- | :----------------------- |
 | `Iterator` | Interface for iterators. |
 
 ### 5. `path` Module
@@ -135,7 +135,7 @@ Descriptions of general interfaces.
 Functions for working with file paths and URLs.
 
 | Function        | Description                                                     |
-|:----------------|:----------------------------------------------------------------|
+| :-------------- | :-------------------------------------------------------------- | ------------------------ |
 | `isAbsolute`    | Checks if a path is absolute.                                   |
 | `isRelative`    | Checks if a path is relative.                                   |
 | `isValidDomain` | Checks if a string is a valid domain name.                      |
