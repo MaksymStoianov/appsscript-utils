@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.0.0...v1.0.1) (2025-07-25)
+
+
+### Bug Fixes
+
+* add .github/FUNDING.yml ([924e13b](https://github.com/MaksymStoianov/appsscript-utils/commit/924e13bc86314c7ec20b4f7d03d96865e6510d66))
+* hashCode.ts and refactor package.json ([2fb9c16](https://github.com/MaksymStoianov/appsscript-utils/commit/2fb9c161b2dc3e0c9985b36d373e3e4272c32928))
+
 ## 1.0.0 (2025-07-25)
 
 
