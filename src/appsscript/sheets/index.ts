@@ -4,6 +4,8 @@ export { appendColumn } from "./appendColumn";
 export { appendColumns } from "./appendColumns";
 export { appendRow } from "./appendRow";
 export { appendRows } from "./appendRows";
+export { prependRow } from "./prependRow";
+export { prependRows } from "./prependRows";
 export { convertRichTextToHtml } from "./convertRichTextToHtml";
 export { doGridRangesIntersect } from "./doGridRangesIntersect";
 export { getColumnIndexByLetter } from "./getColumnIndexByLetter";
