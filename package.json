@@ -2,7 +2,7 @@
   "name": "appsscript-utils",
   "version": "0.1.0",
   "description": "Utilities and types for Google Apps Script development.",
-  "main": "src/base/index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "vitest",
     "format": "prettier --write .",
