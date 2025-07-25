@@ -132,8 +132,7 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 
 A set of custom exception classes for more specific error handling.
 
-<details>
-<summary>Functions</summary>
+<details><summary>Functions</summary>
 
 | Exception                     | Description                         |
 |:------------------------------|:------------------------------------|
@@ -150,8 +149,7 @@ A set of custom exception classes for more specific error handling.
 
 Descriptions of general interfaces.
 
-<details>
-<summary>Functions</summary>
+<details><summary>Functions</summary>
 
 | Interface  | Description              |
 |:-----------|:-------------------------|
@@ -163,8 +161,7 @@ Descriptions of general interfaces.
 
 Functions for working with file paths and URLs.
 
-<details>
-<summary>Functions</summary>
+<details><summary>Functions</summary>
 
 | Function        | Description                                                     |
 |:----------------|:----------------------------------------------------------------|
@@ -178,6 +175,8 @@ Functions for working with file paths and URLs.
 </details>
 
 ## TODO
+
+<details><summary>More</summary>
 
 - [ ] `appsscript/sheets/prependColumn`
 - [ ] `appsscript/sheets/prependColumns`
@@ -208,3 +207,5 @@ Functions for working with file paths and URLs.
 - [ ] `base/date/getDaysLeftInMonth`
 - [ ] `base/date/offset`
 - [ ] `base/date/offset`
+
+</details>
