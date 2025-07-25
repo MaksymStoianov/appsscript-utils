@@ -3,7 +3,7 @@ import { GridRange } from "./types";
 /**
  * Checks if a given {@link GridRange} represents a single cell.
  *
- * @param       range The {@link GridRange} object to check.
+ * @param       range - The {@link GridRange} object to check.
  * @returns     `true` if the range represents a single cell, `false` otherwise.
  * @since       0.1.0
  * @version     0.1.0

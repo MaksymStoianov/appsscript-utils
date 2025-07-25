@@ -8,7 +8,6 @@ import { hashCode } from "../base";
  * @class    Class
  * @since    0.1.0
  * @version  0.1.0
- * @author   Maksym Stoianov <stoianov.maksym@gmail.com>
  */
 export abstract class Class {
   /**

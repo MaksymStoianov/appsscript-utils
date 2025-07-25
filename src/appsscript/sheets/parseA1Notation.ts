@@ -31,6 +31,8 @@ import { GridRange } from "./types";
  * @since       0.1.0
  * @version     0.1.0
  * @environment `Google Apps Script`, `Browser`
+ * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
+ * @license     Apache-2.0
  */
 export function parseA1Notation(a1Notation: string): GridRange {
   if (arguments.length === 0) {

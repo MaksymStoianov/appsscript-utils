@@ -3,9 +3,9 @@ import { GridRange } from "./types";
 /**
  * Checks if two {@link GridRange} objects have the exact same number of rows and columns.
  *
- * @param range1 - The first {@link GridRange} object.
- * @param range2 - The second {@link GridRange} object.
- * @returns `True` if both ranges are well-defined and have the identical height (number of rows) and width (number of columns), `false` otherwise.
+ * @param       range1 - The first {@link GridRange} object.
+ * @param       range2 - The second {@link GridRange} object.
+ * @returns    `true` if both ranges are well-defined and have the identical height (number of rows) and width (number of columns), `false` otherwise.
  * @since       0.1.0
  * @version     0.1.0
  * @environment `Google Apps Script`, `Browser`

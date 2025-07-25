@@ -3,7 +3,6 @@
  *
  * @interface
  * @template  T - type of elements in the collection.
- * @author    Maksym Stoianov <stoianov.maksym@gmail.com>
  * @since     0.1.0
  * @version   0.1.0
  */

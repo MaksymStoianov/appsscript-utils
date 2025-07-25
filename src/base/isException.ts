@@ -1,4 +1,4 @@
-import { Exception } from "./exceptions";
+import { Exception } from "../exceptions";
 import { isObject } from "./isObject";
 
 /**

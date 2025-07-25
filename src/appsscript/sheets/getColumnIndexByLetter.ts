@@ -1,15 +1,15 @@
 import { requireNonEmptyString } from "../../base";
 
 /**
- * Converts a column letter (or combination of letters) into a column number.
+ * Converts a column letter (or combination of letters) into a column index.
  *
  * @example
  * getColumnIndexByLetter("A");   // Returns: 1
  * getColumnIndexByLetter("AA");  // Returns: 27
  * getColumnIndexByLetter("AZ");  // Returns: 52
  *
- * @param       letter The column label (e.g., `'A'`, `'B'`, ..., `'AA'`).
- * @returns     The corresponding column number (1-based index).
+ * @param       letter - The column label (e.g., `'A'`, `'B'`, ..., `'AA'`).
+ * @returns     The corresponding column index.
  * @since       0.1.0
  * @version     0.1.0
  * @environment `Google Apps Script`, `Browser`

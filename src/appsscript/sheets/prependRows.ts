@@ -19,7 +19,7 @@ export interface Options {
  * const ss = SpreadsheetApp.getActiveSpreadsheet();
  * const sheet = ss.getSheetByName('Sheet Name');
  *
- * appendRows(sheet, [
+ * prependRows(sheet, [
  *  ["Value A1", "Value B1", "Value C1"],
  *  ["Value A2", "Value B2", "Value C2"]
  * ]);

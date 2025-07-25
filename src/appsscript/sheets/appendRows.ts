@@ -31,7 +31,9 @@ export interface Options {
  * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
  * @since       0.1.0
  * @version     1.4.0
+ * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
+ * @license     Apache-2.0
  */
 export function appendRows(
   sheet: GoogleAppsScript.Spreadsheet.Sheet,
@@ -62,7 +64,6 @@ export function appendRows(
   const lock = LockService.getDocumentLock();
 
   try {
-    // Ждем, пока не освободится блокировка, но не дольше 30 секунд.
     lock?.waitLock(30000);
 
     const numRows: number = values.length;

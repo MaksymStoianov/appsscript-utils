@@ -1,6 +1,5 @@
+import { isEmpty, isString } from "../base";
 import { EmptyStringException } from "../exceptions";
-import { isEmpty } from "../isEmpty";
-import { isString } from "../isString";
 
 /**
  * Checks if a given string represents a syntactically valid domain name.

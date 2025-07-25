@@ -1,4 +1,4 @@
-import { NullPointerException } from "./exceptions";
+import { NullPointerException } from "../exceptions";
 import { isNil } from "./isNil";
 
 /**

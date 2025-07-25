@@ -6,6 +6,8 @@ import { GridRange } from "./types";
  * @param       gridRange1 - The first {@link GridRange} object to check.
  * @param       gridRange2 - The second {@link GridRange} object to check.
  * @returns     `true` if the ranges share at least one common cell and are located on the same sheet; `false` otherwise.
+ * @since       0.1.0
+ * @version     0.1.0
  * @environment `Google Apps Script`, `Browser`
  */
 export function doGridRangesIntersect(

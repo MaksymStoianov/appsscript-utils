@@ -1,4 +1,4 @@
-import { InvalidEmailFormatException } from "./exceptions";
+import { InvalidEmailFormatException } from "../exceptions";
 import { isEmail } from "./isEmail";
 import { requireNonEmptyString } from "./requireNonEmptyString";
 

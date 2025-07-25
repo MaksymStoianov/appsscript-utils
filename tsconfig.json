@@ -2,21 +2,14 @@
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "./dist",
-    "typeRoots": [
-      "node_modules/@types",
-      "./config/types"
-    ],
-    "types": [
-      "google-apps-script"
-    ],
+    "typeRoots": ["node_modules/@types", "./config/types"],
+    "types": ["google-apps-script"],
     "tsBuildInfoFile": "node_modules/.tmp/tsconfig.appsscript.tsbuildinfo",
     "target": "ESNext",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "useDefineForClassFields": false,
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "module": "ESNext",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -39,16 +32,9 @@
     //    "declarationMap": true,
     "baseUrl": "src",
     "paths": {
-      "@/*": [
-        "*"
-      ]
+      "@/*": ["*"]
     }
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

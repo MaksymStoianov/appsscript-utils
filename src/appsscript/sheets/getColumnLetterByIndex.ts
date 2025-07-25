@@ -8,7 +8,7 @@ import { IllegalArgumentException } from "../../exceptions";
  * getColumnLetterByIndex(26);  // Returns: AA
  * getColumnLetterByIndex(51);  // Returns: AZ
  *
- * @param       columnIndex The zero-based column index (e.g., `0` for 'A').
+ * @param       columnIndex - The zero-based column index (e.g., `0` for 'A').
  * @returns     The alphabetical representation of the column.
  * @since       0.1.0
  * @version     0.1.0

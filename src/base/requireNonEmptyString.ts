@@ -1,4 +1,4 @@
-import { EmptyStringException } from "./exceptions";
+import { EmptyStringException } from "../exceptions";
 import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
 

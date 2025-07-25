@@ -1,5 +1,4 @@
-import { isObject } from "../isObject";
-import { isString } from "../isString";
+import { isObject, isString } from "../base";
 
 /**
  * Base exception class.

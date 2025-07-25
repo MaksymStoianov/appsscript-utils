@@ -10,7 +10,9 @@ import { appendColumns, Options } from "./appendColumns";
  * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
  * @since       0.1.0
  * @version     1.4.0
+ * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
+ * @license     Apache-2.0
  */
 export function appendColumn(
   sheet: GoogleAppsScript.Spreadsheet.Sheet,

@@ -24,13 +24,16 @@ export interface Options {
  *  ["3-1", "3-2", "3-3"]
  * ]);
  * ```
+ *
  * @param       sheet - The Google Apps Script {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object to which columns will be appended.
  * @param       values - A 2D array containing the data to append.
  * @param       [options] - Additional parameters to customize the method's behavior.
  * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
  * @since       0.1.0
  * @version     1.4.0
+ * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
+ * @license     Apache-2.0
  */
 export function appendColumns(
   sheet: GoogleAppsScript.Spreadsheet.Sheet,
@@ -44,9 +47,7 @@ export function appendColumns(
   }
 
   if (!isSheet(sheet)) {
-    throw new TypeError(
-      `Invalid sheet object provided. Expected GoogleAppsScript.Spreadsheet.Sheet.`
-    );
+    throw new TypeError(`Invalid sheet object provided.`);
   }
 
   if (!isConsistent2DArray(values)) {

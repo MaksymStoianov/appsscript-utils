@@ -1,4 +1,4 @@
-import {isRichTextValue} from "./isRichTextValue";
+import { isRichTextValue } from "./isRichTextValue";
 
 /**
  * Converts a [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value) object into HTML, preserving text formatting.
@@ -20,6 +20,7 @@ import {isRichTextValue} from "./isRichTextValue";
  * @version     0.1.0
  * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
+ * @license     Apache-2.0
  */
 export function convertRichTextToHtml(
   richText: GoogleAppsScript.Spreadsheet.RichTextValue
@@ -58,8 +59,6 @@ export function convertRichTextToHtml(
     const attributes: Record<string, string> = {};
     const styles: Record<string, string> = {};
     const tags: string[] = [];
-
-    // Применение форматирования стиля
 
     if (textStyle.isStrikethrough()) {
       tags.push("s");

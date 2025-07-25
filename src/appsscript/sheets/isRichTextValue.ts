@@ -1,4 +1,4 @@
-import { isObject } from "../../base/isObject";
+import { isObject } from "../../base";
 
 /**
  * Checks if the given value is a Google Apps Script [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value) object.

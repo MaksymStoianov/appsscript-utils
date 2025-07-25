@@ -1,1 +1,1 @@
-export { Iterator } from "./Iterator";
+export { type Iterator } from "./Iterator";

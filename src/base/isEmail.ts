@@ -1,6 +1,6 @@
 import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
-import { isValidDomain } from "./path";
+import { isValidDomain } from "../path";
 
 /**
  * Checks if the given input value is a valid email string.
