@@ -1,4 +1,4 @@
-import { isEmail } from "@/isEmail";
+import { isEmail } from "@/base/isEmail";
 import { describe, expect, it } from "vitest";
 
 describe("isEmail", () => {

@@ -1,5 +1,6 @@
 import { isValidDomain } from "@/appsscript/utils";
 import { describe, expect, it } from "vitest";
+
 describe("isValidDomain", () => {
   describe("Correct input data", () => {
     it("should validate a standard domain", () => {
