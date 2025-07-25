@@ -1,20 +1,42 @@
+import { toString } from "@/base/toString";
+import { isBoolean } from "./isBoolean";
+import { isNull } from "./isNull";
 import { isNumber } from "./isNumber";
+import { isObject } from "./isObject";
 import { isString } from "./isString";
+import { isUndefined } from "./isUndefined";
+import { stringifyJson } from "./stringifyJson";
 
 /**
  * Computes a 32-bit hash code for a given value.
  *
- * @param   value - The string or number to compute the hash for.
+ * @param   value - The input value to compute the hash for.
  * @returns The computed 32-bit hash code.
  * @since   0.1.0
- * @version 0.1.0
+ * @version 0.3.0
  */
-export function hashCode(value: string | number): number {
-  if (!isString(value) && !isNumber(value)) {
-    throw new TypeError("Input must be a string or a number.");
+export function hashCode(value: unknown): number {
+  let str: string;
+
+  if (isString(value) || isNumber(value) || isBoolean(value)) {
+    str = String(value);
+  } else if (value === null) {
+    str = "null";
+  } else if (isUndefined(value)) {
+    str = "undefined";
+  } else if (isNull(value)) {
+    str = "null";
+  } else if (isObject(value)) {
+    try {
+      str = toString(value) + stringifyJson(value);
+    } catch (err) {
+      console.warn("Could not stringify object for hashing:", err);
+      str = String(value);
+    }
+  } else {
+    throw new TypeError(`Unsupported input type for hashing: ${typeof value}.`);
   }
 
-  const str = String(value);
   let hash = 0;
 
   if (str.length === 0) {
