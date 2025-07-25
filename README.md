@@ -141,4 +141,4 @@ Functions for working with file paths and URLs.
 | `isValidDomain` | Checks if a string is a valid domain name.                      |
 | `join`          | Joins multiple path segments.                                   |
 | `normalize`     | Normalizes a path, resolving `.` and `..`.                      |
-| `parse`         | Parses a path into its components (root, dir, base, ext, name). |, dir, base, ext, name).    |
+| `parse`         | Parses a path into its components (root, dir, base, ext, name). | , dir, base, ext, name). |
