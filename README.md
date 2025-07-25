@@ -1,6 +1,7 @@
 # Utilities for Google Apps Script Projects
 
-A set of utilities for Google Apps Script, as well as common functions for working with data, strings, validation and
+A set of utilities for **Google Apps Script**, as well as common functions for working with data, strings, validation
+and
 more. This project aims to simplify development in the Apps Script environment and provide frequently used functions in
 one place.
 
@@ -10,20 +11,30 @@ one place.
 
 Functions specifically designed for Google Apps Script environments, including utilities for working with spreadsheets.
 
+<details><summary>Functions</summary>
+
+#### 1.1. `appsscript/base`
+
+<details><summary>Functions</summary>
+
 | Function               | Description                                    |
-| :--------------------- | :--------------------------------------------- |
+|:-----------------------|:-----------------------------------------------|
 | `checkMultipleAccount` | Checks if multiple Google accounts are in use. |
 | `getByteSize`          | Returns the size of a string in bytes.         |
 | `isHtmlOutput`         | Checks if an object is an `HtmlOutput`.        |
 | `isTextOutput`         | Checks if an object is a `TextOutput`.         |
 | `isUi`                 | Checks if an object is a `Ui`.                 |
 
-#### 1.1. `appsscript/sheets` (Google Sheets Utilities)
+</details>
+
+#### 1.2. `appsscript/sheets` (Google Sheets Utilities)
 
 A collection of functions to simplify working with Google Sheets.
 
+<details><summary>Functions</summary>
+
 | Function                    | Description                                                        |
-| :-------------------------- | :----------------------------------------------------------------- |
+|:----------------------------|:-------------------------------------------------------------------|
 | `appendColumn`              | Appends a single column of data to the sheet.                      |
 | `appendColumns`             | Appends multiple columns of data to the sheet.                     |
 | `appendRow`                 | Appends a single row of data to the sheet.                         |
@@ -51,12 +62,18 @@ A collection of functions to simplify working with Google Sheets.
 | `prependRows`               | Prepends multiple rows of data to the sheet.                       |
 | `toA1Notation`              | Converts a `GridRange` to A1 notation.                             |
 
+</details>
+
+</details>
+
 ### 2. `base` Module
 
 General utility functions that can be useful in any JavaScript/TypeScript project.
 
+<details><summary>Functions</summary>
+
 | Function                | Description                                                                    |
-| :---------------------- | :----------------------------------------------------------------------------- |
+|:------------------------|:-------------------------------------------------------------------------------|
 | `chunk`                 | Splits an array into chunks of a specified size.                               |
 | `decodeHtml`            | Decodes HTML entities.                                                         |
 | `encodeHtml`            | Encodes a string for safe use in HTML.                                         |
@@ -109,36 +126,53 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 | `transpose`             | Transposes a 2D array (matrix).                                                |
 | `versionCompare`        | Compares two versions.                                                         |
 
+</details>
+
 ### 3. `exceptions` Module
 
 A set of custom exception classes for more specific error handling.
 
+<details>
+<summary>Functions</summary>
+
 | Exception                     | Description                         |
-| :---------------------------- | :---------------------------------- |
-| `EmptyStringException`        | Exception for empty strings.        |
+|:------------------------------|:------------------------------------|
 | `Exception`                   | Base exception class.               |
+| `RuntimeException`            | Exception for runtime errors.       |
+| `EmptyStringException`        | Exception for empty strings.        |
 | `IllegalArgumentException`    | Exception for invalid arguments.    |
 | `InvalidEmailFormatException` | Exception for invalid email format. |
 | `NullPointerException`        | Exception for `null` values.        |
-| `RuntimeException`            | Exception for runtime errors.       |
+
+</details>
 
 ### 4. `interfaces` Module
 
 Descriptions of general interfaces.
 
+<details>
+<summary>Functions</summary>
+
 | Interface  | Description              |
-| :--------- | :----------------------- |
+|:-----------|:-------------------------|
 | `Iterator` | Interface for iterators. |
+
+</details>
 
 ### 5. `path` Module
 
 Functions for working with file paths and URLs.
 
+<details>
+<summary>Functions</summary>
+
 | Function        | Description                                                     |
-| :-------------- | :-------------------------------------------------------------- | ------------------------ |
+|:----------------|:----------------------------------------------------------------|
 | `isAbsolute`    | Checks if a path is absolute.                                   |
 | `isRelative`    | Checks if a path is relative.                                   |
 | `isValidDomain` | Checks if a string is a valid domain name.                      |
 | `join`          | Joins multiple path segments.                                   |
 | `normalize`     | Normalizes a path, resolving `.` and `..`.                      |
-| `parse`         | Parses a path into its components (root, dir, base, ext, name). | , dir, base, ext, name). |
+| `parse`         | Parses a path into its components (root, dir, base, ext, name). |
+
+</details>
