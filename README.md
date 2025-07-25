@@ -176,3 +176,35 @@ Functions for working with file paths and URLs.
 | `parse`         | Parses a path into its components (root, dir, base, ext, name). |
 
 </details>
+
+## TODO
+
+- [ ] `appsscript/sheets/prependColumn`
+- [ ] `appsscript/sheets/prependColumns`
+- [ ] `appsscript/sheets/insertSchema`
+- [ ] `appsscript/sheets/getSchema`
+- [ ] `appsscript/sheets/removeSchema`
+- [ ] `appsscript/sheets/getValues`
+- [ ] `appsscript/sheets/clearColumnsByConditional`
+- [ ] `appsscript/sheets/clearRowsByConditional`
+- [ ] `appsscript/sheets/deleteRowsByConditional`
+- [ ] `appsscript/sheets/deleteColumnsByConditional`
+- [ ] `appsscript/sheets/updateFormulas`
+- [ ] `appsscript/sheets/updateFormulas`
+- [ ] `appsscript/sheets/abstract/Sheet`
+- [ ] `appsscript/net/abstract/URL`
+- [ ] `appsscript/net/abstract/URLSearchParams`
+- [ ] `appsscript/base/sprintf`
+- [ ] `appsscript/crypto/base64decode`
+- [ ] `appsscript/crypto/base64encode`
+- [ ] `appsscript/crypto/md5`
+- [ ] `appsscript/crypto/sha1`
+- [ ] `appsscript/crypto/sha256`
+- [ ] `appsscript/crypto/sha512`
+- [ ] `appsscript/base/formatDate`
+- [ ] `base/date/now`
+- [ ] `base/date/diff`
+- [ ] `base/date/getDaysInMonth`
+- [ ] `base/date/getDaysLeftInMonth`
+- [ ] `base/date/offset`
+- [ ] `base/date/offset`
