@@ -1,5 +1,4 @@
 import { isEmpty, isString } from "../base";
-import { EmptyStringException } from "../exceptions";
 
 /**
  * Checks if a given string represents a syntactically valid domain name.
@@ -10,7 +9,7 @@ import { EmptyStringException } from "../exceptions";
  */
 export function isValidDomain(domain: string): domain is string {
   if (!isString(domain) || isEmpty(domain)) {
-    throw new EmptyStringException();
+    return false;
   }
 
   if (domain.includes("..")) {

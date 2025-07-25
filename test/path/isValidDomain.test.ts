@@ -74,7 +74,7 @@ describe("isValidDomain", () => {
 
     it("should return false for a domain ending with a hyphen", () => {
       expect(isValidDomain("example-.com")).toBe(false);
-      expect(isValidDomain("example.com-")).toBe(false); // This is caught by overall endsWith('-')
+      expect(isValidDomain("example.com-")).toBe(false);
     });
 
     it("should return false for a domain starting with a dot", () => {
