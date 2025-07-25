@@ -1,4 +1,3 @@
-import { toString } from "@/base/toString";
 import { isBoolean } from "./isBoolean";
 import { isNull } from "./isNull";
 import { isNumber } from "./isNumber";
@@ -6,6 +5,7 @@ import { isObject } from "./isObject";
 import { isString } from "./isString";
 import { isUndefined } from "./isUndefined";
 import { stringifyJson } from "./stringifyJson";
+import { toString } from "./toString";
 
 /**
  * Computes a 32-bit hash code for a given value.

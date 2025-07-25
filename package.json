@@ -22,13 +22,23 @@
     "typescript",
     "utilities"
   ],
-  "author": "Maksym Stoianov <Stoianov.Maksym@gmail.com>",
+  "author": "Maksym Stoianov <stoianov.maksym@gmail.com>",
   "license": "Apache-2.0",
   "type": "module",
   "bugs": {
     "url": "https://github.com/MaksymStoianov/appsscript-utils/issues"
   },
   "homepage": "https://github.com/MaksymStoianov/appsscript-utils#readme",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/MaksymStoianov"
+    },
+    {
+      "type": "buy_me_a_coffee",
+      "url": "https://buymeacoffee.com/MaksymStoianov"
+    }
+  ],
   "devDependencies": {
     "@eslint/json": "^0.13.0",
     "@eslint/markdown": "^7.0.0",
