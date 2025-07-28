@@ -5,6 +5,22 @@ and
 more. This project aims to simplify development in the Apps Script environment and provide frequently used functions in
 one place.
 
+## How to Install
+
+To get started, install the dependencies:
+
+```bash
+npm install github:MaksymStoianov/appsscript-utils#main
+```
+
+> **Note:** It's recommended to use tags (`#vX.Y.Z`) for production environments to ensure version stability.
+
+For example:
+
+```bash
+npm install github:MaksymStoianov/appsscript-utils#v1.0.1
+```
+
 ## Functions by Category
 
 ### 1. `appsscript` Module
