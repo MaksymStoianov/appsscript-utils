@@ -4,7 +4,7 @@
 
 [![Built%20with-clasp](https://img.shields.io/badge/Built%20with-clasp-4285f4.svg)](https://github.com/google/clasp)
 [![License](https://img.shields.io/github/license/MaksymStoianov/appsscript-utils?label=License)](LICENSE)
-[![Latest release](https://img.shields.io/github/v/release/MaksymStoianov/appsscript-utils?label=Release)](https://img.shields.io/github/v/release/MaksymStoianov/appsscript-utils)
+[![Latest release](https://img.shields.io/github/v/release/MaksymStoianov/appsscript-utils?label=Release)](https://github.com/MaksymStoianov/appsscript-utils/releases)
 
 [![GitHub Stars](https://img.shields.io/github/stars/MaksymStoianov/appsscript-utils?style=social)](https://github.com/MaksymStoianov/appsscript-utils/stargazers)
 [![GitHub Fork](https://img.shields.io/github/forks/MaksymStoianov/appsscript-utils?style=social)](https://github.com/MaksymStoianov/appsscript-utils/forks)
