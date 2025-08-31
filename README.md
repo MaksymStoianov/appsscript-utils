@@ -10,9 +10,6 @@
 [![GitHub Fork](https://img.shields.io/github/forks/MaksymStoianov/appsscript-utils?style=social)](https://github.com/MaksymStoianov/appsscript-utils/forks)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/MaksymStoianov?style=social&logo=github)](https://github.com/sponsors/MaksymStoianov)
 
-
----
-
 ## Introduction
 
 A set of utilities for **Google Apps Script**, as well as common functions for working with data, strings, validation
