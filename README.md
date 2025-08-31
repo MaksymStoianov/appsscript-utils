@@ -1,4 +1,19 @@
+<a name="top"></a>
+
 # Utilities for Google Apps Script Projects
+
+[![Built%20with-clasp](https://img.shields.io/badge/Built%20with-clasp-4285f4.svg)](https://github.com/google/clasp)
+[![License](https://img.shields.io/github/license/MaksymStoianov/appsscript-utils?label=License)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/MaksymStoianov/appsscript-utils?label=Release)](https://img.shields.io/github/v/release/MaksymStoianov/appsscript-utils)
+
+[![GitHub Stars](https://img.shields.io/github/stars/MaksymStoianov/appsscript-utils?style=social)](https://github.com/MaksymStoianov/appsscript-utils/stargazers)
+[![GitHub Fork](https://img.shields.io/github/forks/MaksymStoianov/appsscript-utils?style=social)](https://github.com/MaksymStoianov/appsscript-utils/forks)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/MaksymStoianov?style=social&logo=github)](https://github.com/sponsors/MaksymStoianov)
+
+
+---
+
+## Introduction
 
 A set of utilities for **Google Apps Script**, as well as common functions for working with data, strings, validation
 and
@@ -196,7 +211,7 @@ Functions for working with file paths and URLs.
 
 </details>
 
-## TODO
+## Tasks
 
 <details><summary>More</summary>
 
@@ -231,3 +246,15 @@ Functions for working with file paths and URLs.
 - [ ] `base/date/offset`
 
 </details>
+
+## Changelog
+
+For a detailed list of changes and updates, please refer to the [CHANGELOG](CHANGELOG.md) file.
+
+## License
+
+This project is licensed under the [LICENSE](LICENSE) file.
+
+---
+
+⭐ **Like this project?** [Star our awesome repo »](https://github.com/MaksymStoianov/appsscript-utils)
