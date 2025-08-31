@@ -44,6 +44,7 @@ export abstract class Class {
    *  - `true` if the objects are equivalent,
    *  - `false` otherwise.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   equals(input: any): boolean {
     if (this === input) {
       return true;
@@ -76,10 +77,12 @@ export abstract class Class {
    */
   valueOf(): object {
     const result: {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       [key: string]: any;
     } = {};
 
     for (const key of Object.keys(this)) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       result[key] = (this as any)[key];
     }
 
