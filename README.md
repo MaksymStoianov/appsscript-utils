@@ -104,9 +104,9 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 | [`isEmpty`](src/base/isEmpty.ts)                             | Checks if a value is empty (for strings, arrays, objects).                     |
 | [`isException`](src/base/isException.ts)                     | Checks if an object is an instance of `Exception` or its subclass.             |
 | [`isFunction`](src/base/isFunction.ts)                       | Checks if a variable is a function.                                            |
-| [`isLength`](src/base/isLength.ts)`isLength`                 | Checks if a value is "length-like" (arrays, strings, etc.).                    |
-| [`isNil`](src/base/isNil.ts)`isNil`                          | Checks if a value is `null` or `undefined`.                                    |
-| [`isNull`](src/base/isNull.ts)`isNull`                       | Checks if a value is `null`.                                                   |
+| [`isLength`](src/base/isLength.ts)                           | Checks if a value is "length-like" (arrays, strings, etc.).                    |
+| [`isNil`](src/base/isNil.ts)                                 | Checks if a value is `null` or `undefined`.                                    |
+| [`isNull`](src/base/isNull.ts)                               | Checks if a value is `null`.                                                   |
 | [`isNumber`](src/base/isNumber.ts)                           | Checks if a variable is a number.                                              |
 | [`isNumberLike`](src/base/isNumberLike.ts)                   | Checks if a value can be converted to a number.                                |
 | [`isObject`](src/base/isObject.ts)                           | Checks if a variable is an object (but not `null` or an array).                |
@@ -115,7 +115,7 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 | [`isScalar`](src/base/isScalar.ts)                           | Checks if a variable is a scalar value (string, number, boolean, symbol).      |
 | [`isString`](src/base/isString.ts)                           | Checks if a variable is a string.                                              |
 | [`isSymbol`](src/base/isSymbol.ts)                           | Checks if a variable is a symbol.                                              |
-| [`isUndefined`](src/base/isUndefined.ts)`isUndefined`        | Checks if a value is `undefined`.                                              |
+| [`isUndefined`](src/base/isUndefined.ts)                     | Checks if a value is `undefined`.                                              |
 | [`isUrl`](src/base/isUrl.ts)                                 | Checks if a string is a valid URL.                                             |
 | [`isValidLocale`](src/base/isValidLocale.ts)                 | Checks if a string is a valid locale code.                                     |
 | [`isValidSlug`](src/base/isValidSlug.ts)                     | Checks if a string is a valid "slug" (URL-friendly string).                    |
@@ -150,14 +150,14 @@ A set of custom exception classes for more specific error handling.
 
 <details open><summary>Functions</summary>
 
-| Exception                                                                              | Description                         |
-|:---------------------------------------------------------------------------------------|:------------------------------------|
-| [`Exception`](src/exceptions/Exception.ts)                                             | Base exception class.               |
-| [`RuntimeException`](src/exceptions/RuntimeException.ts)                               | Exception for runtime errors.       |
-| [`EmptyStringException`](src/exceptions/EmptyStringException.ts)`EmptyStringException` | Exception for empty strings.        |
-| [`IllegalArgumentException`](src/exceptions/IllegalArgumentException.ts)               | Exception for invalid arguments.    |
-| [`InvalidEmailFormatException`](src/exceptions/InvalidEmailFormatException.ts)         | Exception for invalid email format. |
-| [`NullPointerException`](src/exceptions/NullPointerException.ts)                       | Exception for `null` values.        |
+| Exception                                                                      | Description                         |
+|:-------------------------------------------------------------------------------|:------------------------------------|
+| [`Exception`](src/exceptions/Exception.ts)                                     | Base exception class.               |
+| [`RuntimeException`](src/exceptions/RuntimeException.ts)                       | Exception for runtime errors.       |
+| [`EmptyStringException`](src/exceptions/EmptyStringException.ts)               | Exception for empty strings.        |
+| [`IllegalArgumentException`](src/exceptions/IllegalArgumentException.ts)       | Exception for invalid arguments.    |
+| [`InvalidEmailFormatException`](src/exceptions/InvalidEmailFormatException.ts) | Exception for invalid email format. |
+| [`NullPointerException`](src/exceptions/NullPointerException.ts)               | Exception for `null` values.        |
 
 </details>
 
