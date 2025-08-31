@@ -39,7 +39,7 @@ Functions specifically designed for Google Apps Script environments, including u
 | [`getByteSize`](src/appsscript/getByteSize.ts)                   | Returns the size of a string in bytes.                                                                            |
 | [`isHtmlOutput`](src/appsscript/isHtmlOutput.ts)                 | Checks if an object is an [`HtmlOutput`](https://developers.google.com/apps-script/reference/html/html-output).   |
 | [`isTextOutput`](src/appsscript/isTextOutput.ts)                 | Checks if an object is a [`TextOutput`](https://developers.google.com/apps-script/reference/content/text-output). |
-| [`isUi`](src/appsscript/isUi.ts)                                 | Checks if an object is a `Ui`.                                                                                    |
+| [`isUi`](src/appsscript/isUi.ts)                                 | Checks if an object is a [`Ui`](https://developers.google.com/apps-script/reference/base/ui).                     |
 
 </details>
 
@@ -53,7 +53,7 @@ A collection of functions to simplify working with Google Sheets.
 |:----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
 | [`appendColumn`](src/appsscript/sheets/appendColumn.ts)                           | Appends a single column of data to the sheet.                                                                                    |
 | [`appendColumns`](src/appsscript/sheets/appendColumns.ts)                         | Appends multiple columns of data to the sheet.                                                                                   |
-| [appendRow](src/appsscript/sheets/appendRow.ts)                                   | Appends a single row of data to the sheet.                                                                                       |
+| [`appendRow`](src/appsscript/sheets/appendRow.ts)                                 | Appends a single row of data to the sheet.                                                                                       |
 | [`appendRows`](src/appsscript/sheets/appendRows.ts)                               | Appends multiple rows of data to the sheet.                                                                                      |
 | [`convertRichTextToHtml`](src/appsscript/sheets/convertRichTextToHtml.ts)         | Converts a [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value) to an HTML string. |
 | [`doGridRangesIntersect`](src/appsscript/sheets/doGridRangesIntersect.ts)         | Checks if two [`GridRange`](src/appsscript/sheets/types/GridRange.ts) objects intersect.                                         |
@@ -150,43 +150,49 @@ A set of custom exception classes for more specific error handling.
 
 <details open><summary>Functions</summary>
 
-| Exception                     | Description                         |
-|:------------------------------|:------------------------------------|
-| `Exception`                   | Base exception class.               |
-| `RuntimeException`            | Exception for runtime errors.       |
-| `EmptyStringException`        | Exception for empty strings.        |
-| `IllegalArgumentException`    | Exception for invalid arguments.    |
-| `InvalidEmailFormatException` | Exception for invalid email format. |
-| `NullPointerException`        | Exception for `null` values.        |
+| Exception                                                                              | Description                         |
+|:---------------------------------------------------------------------------------------|:------------------------------------|
+| [`Exception`](src/exceptions/Exception.ts)                                             | Base exception class.               |
+| [`RuntimeException`](src/exceptions/RuntimeException.ts)                               | Exception for runtime errors.       |
+| [`EmptyStringException`](src/exceptions/EmptyStringException.ts)`EmptyStringException` | Exception for empty strings.        |
+| [`IllegalArgumentException`](src/exceptions/IllegalArgumentException.ts)               | Exception for invalid arguments.    |
+| [`InvalidEmailFormatException`](src/exceptions/InvalidEmailFormatException.ts)         | Exception for invalid email format. |
+| [`NullPointerException`](src/exceptions/NullPointerException.ts)                       | Exception for `null` values.        |
 
 </details>
 
-### 4. `interfaces` Module
-
-Descriptions of general interfaces.
-
-<details open><summary>Functions</summary>
-
-| Interface  | Description              |
-|:-----------|:-------------------------|
-| `Iterator` | Interface for iterators. |
-
-</details>
-
-### 5. `path` Module
+### 4. `path` Module
 
 Functions for working with file paths and URLs.
 
 <details open><summary>Functions</summary>
 
-| Function        | Description                                                     |
-|:----------------|:----------------------------------------------------------------|
-| `isAbsolute`    | Checks if a path is absolute.                                   |
-| `isRelative`    | Checks if a path is relative.                                   |
-| `isValidDomain` | Checks if a string is a valid domain name.                      |
-| `join`          | Joins multiple path segments.                                   |
-| `normalize`     | Normalizes a path, resolving `.` and `..`.                      |
-| `parse`         | Parses a path into its components (root, dir, base, ext, name). |
+| Function                                     | Description                                                     |
+|:---------------------------------------------|:----------------------------------------------------------------|
+| [`isAbsolute`](src/path/isAbsolute.ts)       | Checks if a path is absolute.                                   |
+| [`isRelative`](src/path/isRelative.ts)       | Checks if a path is relative.                                   |
+| [`isValidDomain`](src/path/isValidDomain.ts) | Checks if a string is a valid domain name.                      |
+| [`join`](src/path/join.ts)                   | Joins multiple path segments.                                   |
+| [`normalize`](src/path/normalize.ts)         | Normalizes a path, resolving `.` and `..`.                      |
+| [`parse`](src/path/parse.ts)                 | Parses a path into its components (root, dir, base, ext, name). |
+
+</details>
+
+### 5. `abstracts` and `interfaces`
+
+<details open><summary>Functions</summary>
+
+| Abstract                         | Description |
+|:---------------------------------|:------------|
+| [`Class`](src/abstract/Class.ts) |             |
+
+</details>
+
+<details open><summary>Functions</summary>
+
+| Interface                                | Description              |
+|:-----------------------------------------|:-------------------------|
+| [`Iterator`](src/interfaces/Iterator.ts) | Interface for iterators. |
 
 </details>
 
