@@ -244,7 +244,7 @@ Functions for working with file paths and URLs.
 - [ ] `base/date/getDaysInMonth`
 - [ ] `base/date/getDaysLeftInMonth`
 - [ ] `base/date/offset`
-- [ ] `base/date/offset`
+- [ ] `abstract/EventEmitter`
 
 </details>
 
