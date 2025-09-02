@@ -15,6 +15,7 @@ export { isEmail } from "./isEmail";
 export { isEmpty } from "./isEmpty";
 export { isException } from "./isException";
 export { isFunction } from "./isFunction";
+export { isFunctionLike } from "./isFunctionLike";
 export { isLength } from "./isLength";
 export { isNil } from "./isNil";
 export { isNull } from "./isNull";
@@ -33,6 +34,7 @@ export { isValidSlug } from "./isValidSlug";
 export { isValidVersion } from "./isValidVersion";
 export { isVersionCompatible } from "./isVersionCompatible";
 
+export { nonBoolean } from "./nonBoolean";
 export { nonNil } from "./nonNil";
 export { nonNull } from "./nonNull";
 export { nonNumber } from "./nonNumber";
