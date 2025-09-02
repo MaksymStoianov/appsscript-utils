@@ -3,6 +3,8 @@ import { isEmail } from "./isEmail";
 import { requireNonEmptyString } from "./requireNonEmptyString";
 
 /**
+ * ## requireValidEmail
+ *
  * Validates that the provided value is a non-empty string and a valid email format.
  *
  * @param   email - The string value representing an email to validate. Can be `null` or `undefined`.
@@ -10,8 +12,8 @@ import { requireNonEmptyString } from "./requireNonEmptyString";
  * @returns The validated, non-empty, and validly formatted email string.
  * @throws  {EmptyStringException} If the email is `null`, `undefined`, or an empty string after trimming.
  * @throws  {InvalidEmailFormatException} If the email string does not conform to a valid email format.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function requireValidEmail(
   email?: string | null | undefined,

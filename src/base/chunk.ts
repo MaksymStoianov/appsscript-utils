@@ -1,16 +1,11 @@
 /**
+ * ## chunk
+ *
  * Creates an array of elements split into groups the length of `size`.
  * If `array` can't be split evenly, the final chunk will be the remaining elements.
  *
  * This function handles various edge cases, including non-array inputs,
  * non-integer or negative `size` values, and empty arrays.
- *
- * @template T - The type of elements in the input array.
- * @param   array - The array to process.
- * @param   [size = 1] - The length of each chunk. Must be a non-negative integer.
- * @returns A new array of chunks. Each chunk is an array of elements.
- * @throws  {TypeError} If `array` is not an array.
- * @throws  {TypeError} If `size` is not an integer.
  *
  * @example
  * ```typescript
@@ -22,6 +17,15 @@
  * chunk("not an array", 2); // Throws TypeError: Input 'array' must be an array.
  * chunk([1, 2, 3], 1.5); // Throws TypeError: Input 'size' must be an integer.
  * ```
+ *
+ * @template T - The type of elements in the input array.
+ * @param   array - The array to process.
+ * @param   [size = 1] - The length of each chunk. Must be a non-negative integer.
+ * @returns A new array of chunks. Each chunk is an array of elements.
+ * @throws  {TypeError} If `array` is not an array.
+ * @throws  {TypeError} If `size` is not an integer.
+ * @since   1.0.0
+ * @version 1.2.0
  */
 export function chunk<T>(array: T[], size: number = 1): Array<T[]> {
   if (!Array.isArray(array)) {

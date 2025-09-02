@@ -1,6 +1,8 @@
 import { isString } from "./isString";
 
 /**
+ * ## parseJson
+ *
  * Parses a JSON string, including handling and attempting to fix common formatting errors
  * that might cause standard JSON.parse to fail (e.g., unquoted keys, single quotes).
  *
@@ -8,7 +10,7 @@ import { isString } from "./isString";
  * "corrections" like converting single quotes to double quotes and quoting unquoted keys,
  * then tries parsing again.
  *
- * #### Example
+ * @example
  * ```javascript
  * const jsonString1 = `{key: 'value', "list": [1, 2, 3]}`;
  * const result1 = parseJson(jsonString1);
@@ -22,10 +24,11 @@ import { isString } from "./isString";
  * const result3 = parseJson(jsonString3);
  * console.log(result3); // null
  * ```
+ *
  * @param   input - The string containing the JSON to parse.
  * @returns The parsed object if successful, or `null` if the JSON could not be parsed even after attempted corrections.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function parseJson(input: string): object {
   if (!isString(input)) {

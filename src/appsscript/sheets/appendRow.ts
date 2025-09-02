@@ -1,6 +1,8 @@
 import { appendRows, Options } from "./appendRows";
 
 /**
+ * ## appendRow
+ *
  * Appends a single row to the bottom of the current data area on a [`sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).
  * If a cell's content starts with `=`, it is interpreted as a formula.
  *
@@ -8,7 +10,11 @@ import { appendRows, Options } from "./appendRows";
  * @param       values - A 1D array containing the data for the single row.
  * @param       [options] - Additional parameters to customize the method's behavior.
  * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
- * @since       0.1.0
+ * @see         prependRow
+ * @see         appendRows
+ * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
  * @version     1.4.0
  * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>

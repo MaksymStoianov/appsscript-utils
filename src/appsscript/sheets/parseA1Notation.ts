@@ -4,16 +4,21 @@ import { getColumnLetterByIndex } from "./getColumnLetterByIndex";
 import { GridRange } from "./types";
 
 /**
+ * ## parseA1Notation
+ *
  * Parses an A1 notation string into a {@link GridRange} object.
  *
  * @example 1
+ * ```javascript
  * const range = SpreadsheetApp.getActiveRange();
  * const a1Notation = range.getA1Notation();
  * const result = parseA1Notation(a1Notation);
  *
  * console.log(result);
+ * ```
  *
  * @example 2
+ * ```javascript
  * parseA1Notation("A1:AZ10");
  * parseA1Notation("B5");
  * parseA1Notation("5:15");
@@ -25,11 +30,15 @@ import { GridRange } from "./types";
  * parseA1Notation("15:M5");
  * parseA1Notation("Sheet1!A1:B2");
  * parseA1Notation("'Sheet name'!A1:B2");
+ * ```
  *
  * @param       a1Notation - The A1 notation string to parse.
  * @returns     An object representing the parsed grid range.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         GridRange
+ * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`, `Browser`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
  * @license     Apache-2.0

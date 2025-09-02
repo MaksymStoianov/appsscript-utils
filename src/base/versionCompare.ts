@@ -1,6 +1,8 @@
 import { isValidVersion } from "./isValidVersion";
 
 /**
+ * ## versionCompare
+ *
  * Compares two "standardized" version number strings.
  *
  * This function compares two version strings (e.g., "1.0", "1.2.3")
@@ -14,8 +16,8 @@ import { isValidVersion } from "./isValidVersion";
  *  - `0` if they are equal;
  *  - `1` if the first version is greater than the second.
  * @throws {TypeError} If `version1` or `version2` are not valid version strings as determined by `isValidVersion`.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function versionCompare(version1: string, version2: string): number {
   if (!isValidVersion(version1)) {

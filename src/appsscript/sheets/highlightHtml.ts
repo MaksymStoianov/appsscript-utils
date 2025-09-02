@@ -62,9 +62,11 @@ const defaultTheme: Required<Theme> = {
 };
 
 /**
+ * ## highlightHtml
+ *
  * Applies HTML code formatting to Google Sheets cells, using a theme for colors and fonts.
  *
- * #### Example
+ * @example
  * ```javascript
  * const ss = SpreadsheetApp.getActiveSpreadsheet();
  * const sheet = ss.getSheetByName('Sheet1');
@@ -98,8 +100,10 @@ const defaultTheme: Required<Theme> = {
  * @param       range - The range of Google Sheets cells containing the HTML code to be formatted.
  * @param       [theme] An object with theme settings, where you can specify fonts and colors for text, tags, and attributes.
  * @returns     The modified range, allowing for method chaining.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
  * @license     Apache-2.0

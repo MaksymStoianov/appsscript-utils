@@ -2,9 +2,12 @@ import { getColumnLetterByIndex } from "./getColumnLetterByIndex";
 import { GridRange } from "./types";
 
 /**
+ * ## toA1Notation
+ *
  * Converts a {@link GridRange} object back into an A1 notation string.
  *
- * @example 1
+ * @example
+ * ```javascript
  * const gridRange = {
  *  startRowIndex: 0,
  *  endRowIndex: 2,
@@ -15,11 +18,15 @@ import { GridRange } from "./types";
  * const a1Notation = toA1Notation(gridRange);
  *
  * console.log(a1Notation); // A1:B2
+ * ```
  *
  * @param       gridRange - The {@link GridRange} object to convert.
  * @returns     The A1 notation string.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         GridRange
+ * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`, `Browser`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
  * @license     Apache-2.0

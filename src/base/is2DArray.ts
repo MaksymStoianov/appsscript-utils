@@ -1,6 +1,8 @@
 import { isEmpty } from "./isEmpty";
 
 /**
+ * ## is2DArray
+ *
  * Checks if the given input is a non-empty two-dimensional array, meaning it's an array where ***all*** its elements are also arrays.
  *
  * This function first ensures the input itself is an array. If not, it throws a `TypeError`.
@@ -10,6 +12,8 @@ import { isEmpty } from "./isEmpty";
  * If `true`, TypeScript will **narrow the type of `arr`** to `Array<Array<unknown>>`,
  * allowing safer access to its elements as arrays.
  * @throws  {TypeError} If the input `arr` is not an array.
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function is2DArray(arr: unknown): arr is Array<Array<unknown>> {
   if (!Array.isArray(arr)) {

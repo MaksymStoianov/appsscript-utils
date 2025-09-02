@@ -1,13 +1,15 @@
 import { hashCode } from "../base";
 
 /**
+ * ## Class
+ *
  * Abstract base class providing fundamental functionality for subclasses.
  * Intended to be extended by other classes.
  *
  * @abstract
  * @class    Class
- * @since    0.1.0
- * @version  0.1.0
+ * @since    1.0.0
+ * @version  1.0.0
  */
 export abstract class Class {
   /**

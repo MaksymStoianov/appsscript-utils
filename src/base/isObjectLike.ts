@@ -2,11 +2,14 @@ import { isFunction } from "./isFunction";
 import { nonNil } from "./nonNil";
 
 /**
+ * ## isObjectLike
+ *
  * Checks if `value` is an object in a broader sense.
  *
  * @param   value - The value to check.
  * @returns `true` if `value` is an `Object`, else `false`.
- * @since   0.1.0
+ * @see     isObject
+ * @since   1.0.0
  * @version 1.1.0
  */
 export function isObjectLike(value: unknown): value is object {

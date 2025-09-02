@@ -1,9 +1,11 @@
 import { isRichTextValue } from "./isRichTextValue";
 
 /**
+ * ## convertRichTextToHtml
+ *
  * Converts a [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value) object into HTML, preserving text formatting.
  *
- * #### Example
+ * @example
  * ```javascript
  * const ss = SpreadsheetApp.getActiveSpreadsheet();
  * const sheet = ss.getSheetByName('Sheet1');
@@ -16,8 +18,9 @@ import { isRichTextValue } from "./isRichTextValue";
  *
  * @param       richText - The {@link GoogleAppsScript.Spreadsheet.RichTextValue|RichTextValue} object containing formatted text.
  * @returns     The HTML string representing the formatted text.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         [Class RichTextValue](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
  * @license     Apache-2.0

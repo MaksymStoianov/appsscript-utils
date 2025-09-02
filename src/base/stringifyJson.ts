@@ -1,13 +1,15 @@
 import { isObject } from "./isObject";
 
 /**
+ * ## stringifyJson
+ *
  * Recursively sorts object keys and stringifies a value to ensure a deterministic output.
  * This is crucial for consistent hashing of objects.
  *
  * @param   value - The value to stringify.
  * @returns A stable JSON string representation of the value.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function stringifyJson(value: unknown): string {
   if (!isObject(value)) {

@@ -3,12 +3,15 @@ import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
 
 /**
+ * ## encodeHtml
+ *
  * Encodes characters in a string (from `U+00A0` to `U+9999`) into their corresponding HTML entities.
  *
  * @param   value - The string to encode.
  * @returns The string with HTML-encoded characters.
- * @since   0.1.0
- * @version 0.1.0
+ * @see     decodeHtml
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function encodeHtml(value: string): string {
   if (!isString(value) || isEmpty(value)) {
