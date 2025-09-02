@@ -1,13 +1,17 @@
 import { isNull } from "./isNull";
 
 /**
+ * ## nonNull
+ *
  * Checks if the provided value is not `null`.
  *
  * @param   value - The value to check.
  * @returns `true` if the value is not `null`; otherwise, `false`.
- * @since   0.1.0
- * @version 0.1.0
+ * @see     isNull
+ * @see     requireNonNull
+ * @since   1.0.0
+ * @version 1.1.0
  */
-export function nonNull(value: unknown): boolean {
+export function nonNull<T>(value: T | null): value is T {
   return !isNull(value);
 }
