@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.1.1...v1.2.0) (2025-09-02)
+
+
+### Features
+
+* **base/isFunctionLike:** Add isFunctionLike utility function ([0f3177b](https://github.com/MaksymStoianov/appsscript-utils/commit/0f3177b5857a319c5eac51acd8d5d80a8fcc50fb))
+* **base/nonBoolean:** Add nonBoolean utility function ([1c0192c](https://github.com/MaksymStoianov/appsscript-utils/commit/1c0192c14ca2f2a8e6e3120716f8c17c7e440ca7))
+* **base/nonEmpty:** Add nonEmpty utility function ([d4bf710](https://github.com/MaksymStoianov/appsscript-utils/commit/d4bf7101d900923decee3261d048ede7d1f41108))
+
+
+### Bug Fixes
+
+* lint ([db80175](https://github.com/MaksymStoianov/appsscript-utils/commit/db80175b87a03a056c1900d8382d786063511566))
+* **readme:** fix link in README.md ([62a4dd8](https://github.com/MaksymStoianov/appsscript-utils/commit/62a4dd897b93951452edc89d2ed2568db044e4de))
+
 ## [1.1.1](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.1.0...v1.1.1) (2025-08-31)
 
 
