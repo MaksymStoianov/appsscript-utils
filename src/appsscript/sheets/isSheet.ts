@@ -7,6 +7,7 @@ import { isObject } from "../../base";
  *
  * @param       value - The value to check.
  * @returns     `true` if the value is a {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object, `false` otherwise.
+ * @see         nonSheet
  * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
  * @since       1.0.0
  * @version     1.0.0

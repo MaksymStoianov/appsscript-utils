@@ -1,19 +1,20 @@
-import { isObject } from "../../base";
+import { isSheet } from "./isSheet";
 
 /**
- * ## isSheet
+ * ## nonSheet
  *
- * Checks if the given value is a Google Apps Script [`Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet) object.
+ * Checks if the provided value is not a [`Google Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet) object.
  *
- * @param       value - The value to check.
- * @returns     `true` if the value is a {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object, `false` otherwise.
+ * @param value - The value to check.
+ * @returns `true` if the value is not a {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
+ * @see         isSheet
  * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
- * @since       1.0.0
+ * @since       1.3.0
  * @version     1.0.0
- * @environment `Google Apps Script`, `Browser`
+ * @environment Google Apps Script
  */
-export function isSheet(
-  value: unknown
-): value is GoogleAppsScript.Spreadsheet.Sheet {
-  return isObject(value) && value?.toString() === "Sheet";
+export function nonSheet<T>(
+  value: T | GoogleAppsScript.Spreadsheet.Sheet
+): value is T {
+  return !isSheet(value);
 }
