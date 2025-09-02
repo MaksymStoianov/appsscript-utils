@@ -1,4 +1,4 @@
-import { nonNil } from "@/base";
+import { nonNil } from "../../base";
 import { GridRange } from "./types";
 
 /**

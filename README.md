@@ -85,6 +85,7 @@ A collection of functions to simplify working with Google Sheets.
 | [`isTextStyle`](src/appsscript/sheets/isTextStyle.ts)                             | Checks if an object is a [`TextStyle`](https://developers.google.com/apps-script/reference/slides/text-style).                   |
 | [`isValidSheetName`](src/appsscript/sheets/isValidSheetName.ts)                   | Checks if a sheet name is valid.                                                                                                 |
 | [`isValidSpreadsheetId`](src/appsscript/sheets/isValidSpreadsheetId.ts)           | Checks if a spreadsheet ID is valid.                                                                                             |
+| [`nonSheet`](src/appsscript/sheets/nonSheet.ts) 🆕                                | Checks if an object is not a [`Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).                   |
 | [`parseA1Notation`](src/appsscript/sheets/parseA1Notation.ts)                     | Parses an A1 notation (e.g., 'A1:B2') into [`GridRange`](src/appsscript/sheets/types/GridRange.ts) components.                   |
 | [`prependRow`](src/appsscript/sheets/prependRow.ts)                               | Prepends a single row of data to the sheet.                                                                                      |
 | [`prependRows`](src/appsscript/sheets/prependRows.ts)                             | Prepends multiple rows of data to the sheet.                                                                                     |
@@ -243,7 +244,7 @@ Functions for working with file paths and URLs.
 - [ ] `base/date/getDaysInMonth`
 - [ ] `base/date/getDaysLeftInMonth`
 - [ ] `base/date/offset`
-- [ ] `base/date/offset`
+- [ ] `abstract/EventEmitter`
 
 </details>
 
