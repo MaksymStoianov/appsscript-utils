@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.2.0...v1.3.0) (2025-09-02)
+
+
+### Features
+
+* **appsscript/sheets/nonSheet:** Add nonSheet utility function ([adab35c](https://github.com/MaksymStoianov/appsscript-utils/commit/adab35cbe0561ed520bdf4f06b3fb8e60d0e3f17))
+
+
+### Bug Fixes
+
+* imports ([d8b407c](https://github.com/MaksymStoianov/appsscript-utils/commit/d8b407c46eb74a0a7277b435eb22eb7477f830eb))
+* imports ([528ecc1](https://github.com/MaksymStoianov/appsscript-utils/commit/528ecc1580f84dfe26f4676eb8fbb420ba7cf500))
+* src/base/index.ts add nonEmpty ([be7c474](https://github.com/MaksymStoianov/appsscript-utils/commit/be7c47444fb462c7fc71fe15e8fc5792a28f3dbc))
+
 ## [1.2.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.1.1...v1.2.0) (2025-09-02)
 
 
