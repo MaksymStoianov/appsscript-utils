@@ -35,6 +35,7 @@ export { isValidVersion } from "./isValidVersion";
 export { isVersionCompatible } from "./isVersionCompatible";
 
 export { nonBoolean } from "./nonBoolean";
+export { nonEmpty } from "./nonEmpty";
 export { nonNil } from "./nonNil";
 export { nonNull } from "./nonNull";
 export { nonNumber } from "./nonNumber";
