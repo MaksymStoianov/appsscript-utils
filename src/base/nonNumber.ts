@@ -1,13 +1,16 @@
 import { isNumber } from "./isNumber";
 
 /**
+ * ## nonNumber
+ *
  * Checks if the provided value is NOT a number.
  *
  * @param   value - The value to check.
  * @returns `true` if the value is not a number; otherwise, `false`.
- * @since   0.1.0
- * @version 0.1.0
+ * @see     isNumber
+ * @since   1.0.0
+ * @version 1.1.0
  */
-export function nonNumber(value: unknown): boolean {
+export function nonNumber<T>(value: T | number): value is T {
   return !isNumber(value);
 }

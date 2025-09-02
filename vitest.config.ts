@@ -1,7 +1,8 @@
+import { resolve } from "path";
 import { defineConfig } from "vitest/config";
-import { join, resolve } from "path";
 
 export default defineConfig(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async ({ command, mode, isSsrBuild, isPreview }) => {
     const rootDir = process.cwd();
 

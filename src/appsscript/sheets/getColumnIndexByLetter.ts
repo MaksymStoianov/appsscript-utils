@@ -1,17 +1,24 @@
 import { requireNonEmptyString } from "../../base";
 
 /**
+ * ## getColumnIndexByLetter
+ *
  * Converts a column letter (or combination of letters) into a column index.
  *
  * @example
+ * ```javascript
  * getColumnIndexByLetter("A");   // Returns: 1
  * getColumnIndexByLetter("AA");  // Returns: 27
  * getColumnIndexByLetter("AZ");  // Returns: 52
+ * ```
  *
  * @param       letter - The column label (e.g., `'A'`, `'B'`, ..., `'AA'`).
  * @returns     The corresponding column index.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         getColumnLetterByIndex
+ * @see         getColumnPositionByLetter
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`, `Browser`
  */
 export function getColumnIndexByLetter(letter: string): number | null {

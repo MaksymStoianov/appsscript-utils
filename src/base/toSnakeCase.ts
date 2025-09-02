@@ -6,6 +6,8 @@ interface Options {
 }
 
 /**
+ * ## toSnakeCase
+ *
  * Converts a string to `snake_case` format.
  *
  * `snake_case` is a naming convention where words are separated by underscores (`_`),
@@ -14,7 +16,7 @@ interface Options {
  * This function handles spaces, hyphens, and camelCase transitions by inserting underscores.
  * It also normalizes underscores by removing leading/trailing ones and collapsing multiples.
  *
- * #### Example (Default Behavior - keeps other characters)
+ * @example (Default Behavior - keeps other characters)
  * ```javascript
  * const text = "Hello world! How are you?";
  * const result = toSnakeCase(text);
@@ -22,7 +24,7 @@ interface Options {
  * console.log(result); // hello_world!_how_are_you?
  * ```
  *
- * #### Example (Strict Cleaning - removes other characters)
+ * @example (Strict Cleaning - removes other characters)
  * ```javascript
  * const text = "Hello world! How are you?";
  * const result = toSnakeCase(text, { clean: true });
@@ -30,19 +32,20 @@ interface Options {
  * console.log(result); // hello_world_how_are_you
  * ```
  *
- * #### Example (With Input Trimming)
+ * @example (With Input Trimming)
  * ```javascript
  * const textWithWhitespace = "  Hello world  ";
  * const resultTrimmed = toSnakeCase(textWithWhitespace, { trimInput: true });
  *
  * console.log(resultTrimmed); // hello_world
  * ```
+ *
  * @param   value - The input string to convert.
  * @param   [options] - Optional configuration options.
  * @returns The string converted to snake_case.
  * @throws  {Error} (or specific exception from `requireNonEmptyString`) If the `value` is an empty string or not a string.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function toSnakeCase(value: string, options: Options = {}): string {
   const effectiveOptions: Required<Options> = {

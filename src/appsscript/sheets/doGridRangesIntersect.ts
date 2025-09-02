@@ -1,13 +1,17 @@
 import { GridRange } from "./types";
 
 /**
+ * ## doGridRangesIntersect
+ *
  * Checks if two {@link GridRange} objects overlap and are on the same sheet.
  *
  * @param       gridRange1 - The first {@link GridRange} object to check.
  * @param       gridRange2 - The second {@link GridRange} object to check.
  * @returns     `true` if the ranges share at least one common cell and are located on the same sheet; `false` otherwise.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         GridRange
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`, `Browser`
  */
 export function doGridRangesIntersect(

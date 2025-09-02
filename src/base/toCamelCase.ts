@@ -6,6 +6,8 @@ interface Options {
 }
 
 /**
+ * ## toCamelCase
+ *
  * Converts a string to `camelCase` format.
  *
  * `camelCase` is a naming convention where the first letter of each word (except
@@ -14,7 +16,7 @@ interface Options {
  *
  * By default, the resulting string's first letter is converted to lowercase.
  *
- * #### Example (Default Behavior)
+ * @example (Default Behavior)
  * ```javascript
  * const text = "Hello world! How are you?";
  * const result = toCamelCase(text);
@@ -22,7 +24,7 @@ interface Options {
  * console.log(result); // helloWorldHowAreYou
  * ```
  *
- * #### Example (Keeping first letter uppercase)
+ * @example (Keeping first letter uppercase)
  * ```javascript
  * const text = "Hello world!";
  * const result = toCamelCase(text, { firstWordToLowerCase: false });
@@ -33,8 +35,8 @@ interface Options {
  * @param   value - The input string to convert.
  * @param   [options] - Optional configuration options.
  * @returns The string converted to camelCase.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function toCamelCase(value: string, options: Options = {}): string {
   const effectiveOptions: Required<Options> = {

@@ -1,6 +1,8 @@
 import { GridRange } from "./types";
 
 /**
+ * ## isGridRangeContainedIn
+ *
  * Checks if a `GridRange` is entirely contained within another `GridRange`.
  * Both ranges must be located on the same sheet (either by `sheetId` or by `sheetName`).
  *
@@ -8,8 +10,11 @@ import { GridRange } from "./types";
  * @param       containerGridRange - The `GridRange` object that is potentially a superset (parent range).
  * @returns     `true` if `gridRange` is fully contained within `containerGridRange` and they are on the same sheet;
  * `false` otherwise.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         GridRange
+ * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`, `Browser`
  */
 export function isGridRangeContainedIn(

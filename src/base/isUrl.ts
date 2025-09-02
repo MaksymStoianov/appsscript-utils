@@ -1,25 +1,29 @@
 import { isString } from "./isString";
 
 /**
+ * ## isUrl
+ *
  * Checks if the given value is a valid URL string.
+ *
+ * @example
+ * ```javascript
+ * isUrl("https://www.example.com");        // true
+ * isUrl("https://example.com/path");       // true
+ * isUrl("http://localhost:3000/path");     // true
+ * isUrl("ftp://ftp.example.org/file.txt"); // true
+ * isUrl("invalid-url");                    // false
+ * isUrl("  https://whitespace.com ");      // false
+ * isUrl("");                               // false
+ * isUrl("   ");                            // false
+ * isUrl(null);                             // false
+ * isUrl(undefined);                        // false
+ * isUrl(123);                              // false
+ * ```
  *
  * @param   value - The value to check.
  * @returns `true` if the value is a valid URL string; otherwise, `false`.
- *
- * @example
- * ```typescript
- * isUrl("[https://www.example.com](https://www.example.com)");       // true
- * isUrl("http://localhost:3000/path");    // true
- * isUrl("ftp://ftp.example.org/file.txt");// true
- * isUrl("invalid-url");                   // false (missing protocol)
- * isUrl("[example.com/path](https://example.com/path)");              // false (missing protocol)
- * isUrl("  [https://whitespace.com](https://whitespace.com)  ");   // true (leading/trailing whitespace is trimmed)
- * isUrl("");                              // false
- * isUrl("   ");                           // false
- * isUrl(null);                            // false
- * isUrl(undefined);                       // false
- * isUrl(123);                             // false
- * ```
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function isUrl(value: unknown): value is string {
   if (!isString(value)) {

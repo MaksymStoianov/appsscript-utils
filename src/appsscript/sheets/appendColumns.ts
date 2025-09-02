@@ -10,10 +10,12 @@ export interface Options {
 }
 
 /**
+ * ## appendColumns
+ *
  * Appends columns to the right of the current data area on a [`sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).
  * If a cell's content starts with `=`, it will be interpreted as a formula.
  *
- * #### Example
+ * @example
  * ```javascript
  * const ss = SpreadsheetApp.getActiveSpreadsheet();
  * const sheet = ss.getSheetByName('Sheet Name');
@@ -29,7 +31,10 @@ export interface Options {
  * @param       values - A 2D array containing the data to append.
  * @param       [options] - Additional parameters to customize the method's behavior.
  * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
- * @since       0.1.0
+ * @see         appendColumn
+ * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
  * @version     1.4.0
  * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>

@@ -3,12 +3,16 @@ import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
 
 /**
+ * ## escapeHtml
+ *
  * Escapes HTML special characters in a string.
  *
  * @param   value - The string to escape.
  * @returns The string with HTML special characters converted to entities.
- * @since   0.1.0
- * @version 0.1.0
+ * @see     escapeRegExp
+ * @see     escapeXml
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function escapeHtml(value: string): string {
   if (!isString(value) || isEmpty(value)) {

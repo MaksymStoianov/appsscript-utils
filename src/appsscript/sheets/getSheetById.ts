@@ -1,13 +1,16 @@
 import { isEmpty } from "../../base";
 
 /**
+ * ## getSheetById
+ *
  * Retrieves a Google Sheet by its unique ID.
  *
  * @param       sheetId - The unique ID of the sheet to retrieve.
  * @param       [ss] - The Spreadsheet object to search within. Defaults to the active Spreadsheet if not provided.
  * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object if found, otherwise `null`.
- * @since       0.1.0
- * @version     0.1.0
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
+ * @version     1.0.0
  * @environment `Google Apps Script`
  */
 export function getSheetById(

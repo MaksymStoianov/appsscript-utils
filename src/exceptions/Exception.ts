@@ -1,10 +1,13 @@
 import { isObject, isString } from "../base";
 
 /**
+ * ## Exception
+ *
  * Base exception class.
  *
- * @since   0.1.0
- * @version 0.1.0
+ * @see     Error
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export class Exception extends Error {
   /**

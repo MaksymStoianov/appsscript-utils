@@ -6,6 +6,8 @@ interface Options {
 }
 
 /**
+ * ## toKebabCase
+ *
  * Converts a string to `kebab-case` format.
  *
  * `kebab-case` is a naming convention where words are separated by hyphens (`-`),
@@ -14,7 +16,7 @@ interface Options {
  * This function handles spaces, underscores, and camelCase transitions by inserting hyphens.
  * It also cleans up multiple or leading/trailing hyphens.
  *
- * #### Example (Default Behavior)
+ * @example (Default Behavior)
  * ```javascript
  * const text = "Hello world! How are you?";
  * const result = toKebabCase(text);
@@ -22,7 +24,7 @@ interface Options {
  * console.log(result); // hello-world!-how-are-you
  * ```
  *
- * #### Example (Strict Cleaning)
+ * @example (Strict Cleaning)
  * ```javascript
  * const text = "Hello world! How are you?";
  * const result = toKebabCase(text, { clean: true });
@@ -33,8 +35,8 @@ interface Options {
  * @param   value - The input string to convert.
  * @param   [options] - Optional configuration options.
  * @returns The string converted to kebab-case.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function toKebabCase(value: string, options: Options = {}): string {
   const effectiveOptions: Required<Options> = {

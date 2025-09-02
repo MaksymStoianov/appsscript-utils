@@ -3,6 +3,8 @@ import { isObject } from "./isObject";
 import { toString } from "./toString";
 
 /**
+ * ## isEmpty
+ *
  * Checks if a value is considered "empty".
  *
  * This function handles common JavaScript types:
@@ -16,8 +18,9 @@ import { toString } from "./toString";
  *
  * @param   value - The value to check for emptiness.
  * @returns `true` if the value is empty; otherwise, `false`.
- * @since   0.1.0
- * @version 0.1.0
+ * @see     nonEmpty
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function isEmpty(value: unknown): boolean {
   if (isNil(value)) {

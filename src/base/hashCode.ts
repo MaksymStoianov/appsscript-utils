@@ -8,12 +8,14 @@ import { stringifyJson } from "./stringifyJson";
 import { toString } from "./toString";
 
 /**
+ * ## hashCode
+ *
  * Computes a 32-bit hash code for a given value.
  *
  * @param   value - The input value to compute the hash for.
  * @returns The computed 32-bit hash code.
- * @since   0.1.0
- * @version 0.3.0
+ * @since   1.0.0
+ * @version 1.3.0
  */
 export function hashCode(value: unknown): number {
   let str: string;

@@ -10,11 +10,13 @@ export interface Options {
 }
 
 /**
+ * ## appendRows
+ *
  * Appends rows to the bottom of the current data area on a [`sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).
  * Data is written starting from column 1 of the new rows.
  * If a cell's content in `values` starts with `=`, it is interpreted as a formula.
  *
- * #### Example
+ * @example
  * ```typescript
  * const ss = SpreadsheetApp.getActiveSpreadsheet();
  * const sheet = ss.getSheetByName('Sheet Name');
@@ -29,7 +31,11 @@ export interface Options {
  * @param       values - A 2D array containing the data to append.
  * @param       [options] - Additional parameters to customize the method's behavior.
  * @returns     The {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet} object.
- * @since       0.1.0
+ * @see         prependRows
+ * @see         appendRow
+ * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+ * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
+ * @since       1.0.0
  * @version     1.4.0
  * @environment `Google Apps Script`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>

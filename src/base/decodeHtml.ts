@@ -3,12 +3,15 @@ import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
 
 /**
+ * ## decodeHtml
+ *
  * Decodes common HTML entities in a string.
  *
  * @param   value - The string containing HTML entities to decode.
  * @returns The string with decoded HTML entities.
- * @since   0.1.0
- * @version 0.2.0
+ * @see     encodeHtml
+ * @since   1.0.0
+ * @version 1.2.0
  */
 export function decodeHtml(value: string): string {
   if (!isString(value) || isEmpty(value)) {

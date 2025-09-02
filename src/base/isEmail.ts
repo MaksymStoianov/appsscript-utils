@@ -1,20 +1,24 @@
+import { isValidDomain } from "../path";
 import { isEmpty } from "./isEmpty";
 import { isString } from "./isString";
-import { isValidDomain } from "../path";
 
 /**
+ * ## isEmail
+ *
  * Checks if the given input value is a valid email string.
  *
  * @example
+ * ```javascript
  * isEmail("test@example.com"); // Returns: true
  * isEmail("invalid-email");    // Returns: false
  * isEmail(123);                // Returns: false
  * isEmail("");                 // Returns: false
+ * ```
  *
  * @param   email - The value to check, which could be of any type.
  * @returns `true` if the value is a non-empty string and matches a common email format; otherwise, `false`.
- * @since   0.1.0
- * @version 0.1.0
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function isEmail(email: unknown): email is string {
   if (!isString(email) || isEmpty(email)) {

@@ -1,13 +1,15 @@
 import { isNumber } from "./isNumber";
 
 /**
+ * ## isLength
+ *
  * Checks if `value` is a valid array-like length.
  *
  * @param   value - The value to check.
  * @returns `true` if `value` is a valid length, else `false`.
- * @since   0.1.0
- * @version 0.1.0
  * @see     https://lodash.com/docs/4.17.15#isLength
+ * @since   1.0.0
+ * @version 1.0.0
  */
 export function isLength(value: unknown): boolean {
   return (
