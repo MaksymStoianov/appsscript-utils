@@ -7,9 +7,9 @@ import { isNumber } from "./isNumber";
  *
  * @param   value - The value to check.
  * @returns `true` if `value` is a valid length, else `false`.
+ * @see     https://lodash.com/docs/4.17.15#isLength
  * @since   1.0.0
  * @version 1.0.0
- * @see     https://lodash.com/docs/4.17.15#isLength
  */
 export function isLength(value: unknown): boolean {
   return (
