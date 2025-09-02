@@ -1,4 +1,4 @@
-import { getColumnLetterByIndex } from "@/appsscript";
+import { getColumnLetterByIndex } from "./getColumnLetterByIndex";
 
 /**
  * ## getColumnLetterByPosition
