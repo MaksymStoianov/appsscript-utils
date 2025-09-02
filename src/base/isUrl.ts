@@ -22,7 +22,6 @@ import { isString } from "./isString";
  *
  * @param   value - The value to check.
  * @returns `true` if the value is a valid URL string; otherwise, `false`.
- *
  * @since   1.0.0
  * @version 1.0.0
  */

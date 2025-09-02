@@ -18,6 +18,7 @@ import { toString } from "./toString";
  *
  * @param   value - The value to check for emptiness.
  * @returns `true` if the value is empty; otherwise, `false`.
+ * @see     nonEmpty
  * @since   1.0.0
  * @version 1.0.0
  */
