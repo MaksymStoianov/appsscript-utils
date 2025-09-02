@@ -1,13 +1,16 @@
 import { isNil } from "./isNil";
 
 /**
+ * ## nonNil
+ *
  * Checks if the provided value is neither `null` nor `undefined` (i.e., "not nil").
  *
  * @param   value - The value to check.
  * @returns `true` if the value is not `null` and not `undefined`; otherwise, `false`.
- * @since   0.1.0
- * @version 0.1.0
+ * @see     isNil
+ * @since   1.0.0
+ * @version 1.0.0
  */
-export function nonNil(value: unknown): boolean {
+export function nonNil<T>(value: T | null | undefined): value is T {
   return !isNil(value);
 }
