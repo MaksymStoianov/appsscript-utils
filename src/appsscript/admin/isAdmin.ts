@@ -4,7 +4,8 @@ import { nonFunction } from "../../base";
  * ## isAdmin
  *
  * Checks if the current user is an administrator of the Google Workspace domain.
- * Requires the `Admin SDK Directory Service` to be enabled.
+ *
+ * **Note:** Requires the `Admin SDK Directory Service` to be enabled.
  *
  * @returns `true` if the user is an administrator; otherwise, `false`.
  */

@@ -46,7 +46,7 @@ Functions specifically designed for Google Apps Script environments, including u
 <details open><summary>Functions</summary>
 
 | Function                                                         | Description                                                                                                       |
-| :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+|:-----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|
 | [`checkMultipleAccount`](src/appsscript/checkMultipleAccount.ts) | Checks if multiple Google accounts are in use.                                                                    |
 | [`getByteSize`](src/appsscript/getByteSize.ts)                   | Returns the size of a string in bytes.                                                                            |
 | [`isHtmlOutput`](src/appsscript/isHtmlOutput.ts)                 | Checks if an object is an [`HtmlOutput`](https://developers.google.com/apps-script/reference/html/html-output).   |
@@ -55,14 +55,24 @@ Functions specifically designed for Google Apps Script environments, including u
 
 </details>
 
-#### 1.2. `appsscript/sheets` (Google Sheets Utilities)
+#### 1.2. `appsscript/admin` (Admin SDK Directory Service)
+
+<details open><summary>Functions</summary>
+
+| Function                                        | Description                                                                    |
+|:------------------------------------------------|:-------------------------------------------------------------------------------|
+| [`isAdmin`](src/appsscript/admin/isAdmin.ts) 🆕 | Checks if the current user is an administrator of the Google Workspace domain. |
+
+</details>
+
+#### 1.3. `appsscript/sheets` (Google Sheets Utilities)
 
 A collection of functions to simplify working with Google Sheets.
 
 <details open><summary>Functions</summary>
 
 | Function                                                                          | Description                                                                                                                      |
-| :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+|:----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
 | [`appendColumn`](src/appsscript/sheets/appendColumn.ts)                           | Appends a single column of data to the sheet.                                                                                    |
 | [`appendColumns`](src/appsscript/sheets/appendColumns.ts)                         | Appends multiple columns of data to the sheet.                                                                                   |
 | [`appendRow`](src/appsscript/sheets/appendRow.ts)                                 | Appends a single row of data to the sheet.                                                                                       |
@@ -89,6 +99,7 @@ A collection of functions to simplify working with Google Sheets.
 | [`parseA1Notation`](src/appsscript/sheets/parseA1Notation.ts)                     | Parses an A1 notation (e.g., 'A1:B2') into [`GridRange`](src/appsscript/sheets/types/GridRange.ts) components.                   |
 | [`prependRow`](src/appsscript/sheets/prependRow.ts)                               | Prepends a single row of data to the sheet.                                                                                      |
 | [`prependRows`](src/appsscript/sheets/prependRows.ts)                             | Prepends multiple rows of data to the sheet.                                                                                     |
+| [`sortSheets`](src/appsscript/sheets/sortSheets.ts) 🆕                            | Sorts all sheets in a spreadsheet alphabetically by name.                                                                        |
 | [`toA1Notation`](src/appsscript/sheets/toA1Notation.ts)                           | Converts a [`GridRange`](src/appsscript/sheets/types/GridRange.ts) to A1 notation.                                               |
 
 </details>
@@ -102,7 +113,7 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 <details open><summary>Functions</summary>
 
 | Function                                                     | Description                                                                                    |
-| :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
 | [`chunk`](src/base/chunk.ts)                                 | Splits an array into chunks of a specified size.                                               |
 | [`decodeHtml`](src/base/decodeHtml.ts)                       | Decodes HTML entities.                                                                         |
 | [`encodeHtml`](src/base/encodeHtml.ts)                       | Encodes a string for safe use in HTML.                                                         |
@@ -173,7 +184,7 @@ A set of custom exception classes for more specific error handling.
 <details open><summary>Functions</summary>
 
 | Exception                                                                      | Description                         |
-| :----------------------------------------------------------------------------- | :---------------------------------- |
+|:-------------------------------------------------------------------------------|:------------------------------------|
 | [`Exception`](src/exceptions/Exception.ts)                                     | Base exception class.               |
 | [`RuntimeException`](src/exceptions/RuntimeException.ts)                       | Exception for runtime errors.       |
 | [`EmptyStringException`](src/exceptions/EmptyStringException.ts)               | Exception for empty strings.        |
@@ -190,7 +201,7 @@ Functions for working with file paths and URLs.
 <details open><summary>Functions</summary>
 
 | Function                                     | Description                                                     |
-| :------------------------------------------- | :-------------------------------------------------------------- |
+|:---------------------------------------------|:----------------------------------------------------------------|
 | [`isAbsolute`](src/path/isAbsolute.ts)       | Checks if a path is absolute.                                   |
 | [`isRelative`](src/path/isRelative.ts)       | Checks if a path is relative.                                   |
 | [`isValidDomain`](src/path/isValidDomain.ts) | Checks if a string is a valid domain name.                      |
@@ -205,7 +216,7 @@ Functions for working with file paths and URLs.
 <details open><summary>Functions</summary>
 
 | Abstract                         | Description |
-| :------------------------------- | :---------- |
+|:---------------------------------|:------------|
 | [`Class`](src/abstract/Class.ts) |             |
 
 </details>
@@ -213,7 +224,7 @@ Functions for working with file paths and URLs.
 <details open><summary>Functions</summary>
 
 | Interface                                | Description              |
-| :--------------------------------------- | :----------------------- |
+|:-----------------------------------------|:-------------------------|
 | [`Iterator`](src/interfaces/Iterator.ts) | Interface for iterators. |
 
 </details>

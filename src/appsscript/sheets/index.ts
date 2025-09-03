@@ -12,6 +12,7 @@ export { getColumnIndexByLetter } from "./getColumnIndexByLetter";
 export { getColumnLetterByIndex } from "./getColumnLetterByIndex";
 export { getSheetById } from "./getSheetById";
 export { highlightHtml } from "./highlightHtml";
+export { sortSheets } from "./sortSheets";
 
 export { isCellGridRange } from "./isCellGridRange";
 export { isGridRangeContainedIn } from "./isGridRangeContainedIn";
