@@ -55,7 +55,17 @@ Functions specifically designed for Google Apps Script environments, including u
 
 </details>
 
-#### 1.2. `appsscript/sheets` (Google Sheets Utilities)
+#### 1.2. `appsscript/admin` (Admin SDK Directory Service)
+
+<details open><summary>Functions</summary>
+
+| Function                                        | Description                                                                    |
+|:------------------------------------------------|:-------------------------------------------------------------------------------|
+| [`isAdmin`](src/appsscript/admin/isAdmin.ts) 🆕 | Checks if the current user is an administrator of the Google Workspace domain. |
+
+</details>
+
+#### 1.3. `appsscript/sheets` (Google Sheets Utilities)
 
 A collection of functions to simplify working with Google Sheets.
 
@@ -89,6 +99,7 @@ A collection of functions to simplify working with Google Sheets.
 | [`parseA1Notation`](src/appsscript/sheets/parseA1Notation.ts)                     | Parses an A1 notation (e.g., 'A1:B2') into [`GridRange`](src/appsscript/sheets/types/GridRange.ts) components.                   |
 | [`prependRow`](src/appsscript/sheets/prependRow.ts)                               | Prepends a single row of data to the sheet.                                                                                      |
 | [`prependRows`](src/appsscript/sheets/prependRows.ts)                             | Prepends multiple rows of data to the sheet.                                                                                     |
+| [`sortSheets`](src/appsscript/sheets/sortSheets.ts) 🆕                            | Sorts all sheets in a spreadsheet alphabetically by name.                                                                        |
 | [`toA1Notation`](src/appsscript/sheets/toA1Notation.ts)                           | Converts a [`GridRange`](src/appsscript/sheets/types/GridRange.ts) to A1 notation.                                               |
 
 </details>
@@ -101,62 +112,68 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 
 <details open><summary>Functions</summary>
 
-| Function                                                     | Description                                                               |
-|:-------------------------------------------------------------|:--------------------------------------------------------------------------|
-| [`chunk`](src/base/chunk.ts)                                 | Splits an array into chunks of a specified size.                          |
-| [`decodeHtml`](src/base/decodeHtml.ts)                       | Decodes HTML entities.                                                    |
-| [`encodeHtml`](src/base/encodeHtml.ts)                       | Encodes a string for safe use in HTML.                                    |
-| [`escapeHtml`](src/base/escapeHtml.ts)                       | Escapes HTML special characters.                                          |
-| [`escapeRegExp`](src/base/escapeRegExp.ts)                   | Escapes special characters for use in regular expressions.                |
-| [`escapeXml`](src/base/escapeXml.ts)                         | Escapes XML special characters.                                           |
-| [`hashCode`](src/base/hashCode.ts)                           | Calculates a hash code for a string.                                      |
-| [`is2DArray`](src/base/is2DArray.ts)                         | Checks if a variable is a 2D array.                                       |
-| [`isBoolean`](src/base/isBoolean.ts)                         | Checks if a variable is a boolean value.                                  |
-| [`isConsistent2DArray`](src/base/isConsistent2DArray.ts)     | Checks if a 2D array has consistent inner array lengths.                  |
-| [`isEmail`](src/base/isEmail.ts)                             | Checks if a string is a valid email address.                              |
-| [`isEmpty`](src/base/isEmpty.ts)                             | Checks if a value is empty (for strings, arrays, objects).                |
-| [`isException`](src/base/isException.ts)                     | Checks if an object is an instance of `Exception` or its subclass.        |
-| [`isFunction`](src/base/isFunction.ts)                       | Checks if a variable is a function.                                       |
-| [`isFunctionLike`](src/base/isFunctionLike.ts) 🆕            | Checks if a variable is a function in a broader sense.                    |
-| [`isLength`](src/base/isLength.ts)                           | Checks if a value is "length-like" (arrays, strings, etc.).               |
-| [`isNil`](src/base/isNil.ts)                                 | Checks if a value is `null` or `undefined`.                               |
-| [`isNull`](src/base/isNull.ts)                               | Checks if a value is `null`.                                              |
-| [`isNumber`](src/base/isNumber.ts)                           | Checks if a variable is a number.                                         |
-| [`isNumberLike`](src/base/isNumberLike.ts)                   | Checks if a value can be converted to a number.                           |
-| [`isObject`](src/base/isObject.ts)                           | Checks if a variable is an object (but not `null` or an array).           |
-| [`isObjectLike`](src/base/isObjectLike.ts)                   | Checks if a variable is object-like (objects, arrays, functions).         |
-| [`isRegExp`](src/base/isRegExp.ts)                           | Checks if a variable is a regular expression.                             |
-| [`isScalar`](src/base/isScalar.ts)                           | Checks if a variable is a scalar value (string, number, boolean, symbol). |
-| [`isString`](src/base/isString.ts)                           | Checks if a variable is a string.                                         |
-| [`isSymbol`](src/base/isSymbol.ts)                           | Checks if a variable is a symbol.                                         |
-| [`isUndefined`](src/base/isUndefined.ts)                     | Checks if a value is `undefined`.                                         |
-| [`isUrl`](src/base/isUrl.ts)                                 | Checks if a string is a valid URL.                                        |
-| [`isValidLocale`](src/base/isValidLocale.ts)                 | Checks if a string is a valid locale code.                                |
-| [`isValidSlug`](src/base/isValidSlug.ts)                     | Checks if a string is a valid "slug" (URL-friendly string).               |
-| [`isValidVersion`](src/base/isValidVersion.ts)               | Checks if a string is a valid version number (semantic versioning).       |
-| [`isVersionCompatible`](src/base/isVersionCompatible.ts)     | Checks version compatibility.                                             |
-| [`nonBoolean`](src/base/nonBoolean.ts) 🆕                    | Returns `true` if not `boolean`.                                          |
-| [`nonEmpty`](src/base/nonEmpty.ts) 🆕                        | Returns `true` if not "empty".                                            |
-| [`nonNil`](src/base/nonNil.ts)                               | Returns `true` if not `null` or `undefined`.                              |
-| [`nonNull`](src/base/nonNull.ts)                             | Returns `true` if not `null`.                                             |
-| [`nonNumber`](src/base/nonNumber.ts)                         | Returns `true` if not a `number`.                                         |
-| [`nonString`](src/base/nonString.ts)                         | Returns `true` if not a `string`.                                         |
-| [`parseJson`](src/base/parseJson.ts)                         | Safely parses a JSON string.                                              |
-| [`requireNonEmptyString`](src/base/requireNonEmptyString.ts) | Checks if a string is non-empty, otherwise throws an exception.           |
-| [`requireNonNull`](src/base/requireNonNull.ts)               | Checks that a value is not `null`, otherwise throws an exception.         |
-| [`requireString`](src/base/requireString.ts)                 | Checks that a value is a string, otherwise throws an exception.           |
-| [`requireValidEmail`](src/base/requireValidEmail.ts)         | Checks that a string is a valid email, otherwise throws an exception.     |
-| [`stringifyJson`](src/base/stringifyJson.ts)                 | Safely converts an object to a JSON string.                               |
-| [`toCamelCase`](src/base/toCamelCase.ts)                     | Converts a string to camelCase.                                           |
-| [`toInteger`](src/base/toInteger.ts)                         | Converts a value to an integer.                                           |
-| [`toKebabCase`](src/base/toKebabCase.ts)                     | Converts a string to kebab-case.                                          |
-| [`toLowerCase`](src/base/toLowerCase.ts)                     | Converts a string to lowercase.                                           |
-| [`toProperCase`](src/base/toProperCase.ts)                   | Converts a string to Proper Case (first letter of each word capitalized). |
-| [`toSnakeCase`](src/base/toSnakeCase.ts)                     | Converts a string to snake_case.                                          |
-| [`toString`](src/base/toString.ts)                           | Converts a value to a string.                                             |
-| [`toUpperCase`](src/base/toUpperCase.ts)                     | Converts a string to uppercase.                                           |
-| [`transpose`](src/base/transpose.ts)                         | Transposes a 2D array (matrix).                                           |
-| [`versionCompare`](src/base/versionCompare.ts)               | Compares two versions.                                                    |
+| Function                                                     | Description                                                                                    |
+|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
+| [`chunk`](src/base/chunk.ts)                                 | Splits an array into chunks of a specified size.                                               |
+| [`decodeHtml`](src/base/decodeHtml.ts)                       | Decodes HTML entities.                                                                         |
+| [`encodeHtml`](src/base/encodeHtml.ts)                       | Encodes a string for safe use in HTML.                                                         |
+| [`escapeHtml`](src/base/escapeHtml.ts)                       | Escapes HTML special characters.                                                               |
+| [`escapeRegExp`](src/base/escapeRegExp.ts)                   | Escapes special characters for use in regular expressions.                                     |
+| [`escapeXml`](src/base/escapeXml.ts)                         | Escapes XML special characters.                                                                |
+| [`hashCode`](src/base/hashCode.ts)                           | Calculates a hash code for a string.                                                           |
+| [`is2DArray`](src/base/is2DArray.ts)                         | Checks if a variable is a 2D array.                                                            |
+| [`isArray`](src/base/isArray.ts) 🆕                          | Checks if a variable is a `Array`.                                                             |
+| [`isBoolean`](src/base/isBoolean.ts)                         | Checks if a variable is a boolean value.                                                       |
+| [`isConsistent2DArray`](src/base/isConsistent2DArray.ts)     | Checks if a 2D array has consistent inner array lengths.                                       |
+| [`isEmail`](src/base/isEmail.ts)                             | Checks if a string is a valid email address.                                                   |
+| [`isEmpty`](src/base/isEmpty.ts)                             | Checks if a value is empty (for strings, arrays, objects).                                     |
+| [`isException`](src/base/isException.ts)                     | Checks if an object is an instance of `Exception` or its subclass.                             |
+| [`isFunction`](src/base/isFunction.ts)                       | Checks if a variable is a function.                                                            |
+| [`isFunctionLike`](src/base/isFunctionLike.ts) 🆕            | Checks if a variable is a function in a broader sense.                                         |
+| [`isLength`](src/base/isLength.ts)                           | Checks if a value is "length-like" (arrays, strings, etc.).                                    |
+| [`isNil`](src/base/isNil.ts)                                 | Checks if a value is `null` or `undefined`.                                                    |
+| [`isNull`](src/base/isNull.ts)                               | Checks if a value is `null`.                                                                   |
+| [`isNumber`](src/base/isNumber.ts)                           | Checks if a variable is a number.                                                              |
+| [`isNumberLike`](src/base/isNumberLike.ts)                   | Checks if a value can be converted to a number.                                                |
+| [`isObject`](src/base/isObject.ts)                           | Checks if a variable is an object (but not `null` or an array).                                |
+| [`isObjectLike`](src/base/isObjectLike.ts)                   | Checks if a variable is object-like (objects, arrays, functions).                              |
+| [`isRegExp`](src/base/isRegExp.ts)                           | Checks if a variable is a regular expression.                                                  |
+| [`isScalar`](src/base/isScalar.ts)                           | Checks if a variable is a scalar value (`string`, `number`, `boolean`, `symbol` and `bigint`). |
+| [`isString`](src/base/isString.ts)                           | Checks if a variable is a string.                                                              |
+| [`isSymbol`](src/base/isSymbol.ts)                           | Checks if a variable is a symbol.                                                              |
+| [`isUndefined`](src/base/isUndefined.ts)                     | Checks if a value is `undefined`.                                                              |
+| [`isUrl`](src/base/isUrl.ts)                                 | Checks if a string is a valid URL.                                                             |
+| [`isValidLocale`](src/base/isValidLocale.ts)                 | Checks if a string is a valid locale code.                                                     |
+| [`isValidSlug`](src/base/isValidSlug.ts)                     | Checks if a string is a valid "slug" (URL-friendly string).                                    |
+| [`isValidVersion`](src/base/isValidVersion.ts)               | Checks if a string is a valid version number (semantic versioning).                            |
+| [`isVersionCompatible`](src/base/isVersionCompatible.ts)     | Checks version compatibility.                                                                  |
+| [`nonArray`](src/base/nonArray.ts) 🆕                        | Returns `true` if not `Array`.                                                                 |
+| [`nonBoolean`](src/base/nonBoolean.ts) 🆕                    | Returns `true` if not `boolean`.                                                               |
+| [`nonEmpty`](src/base/nonEmpty.ts) 🆕                        | Returns `true` if not "empty".                                                                 |
+| [`nonFunction`](src/base/nonFunction.ts) 🆕                  | Returns `true` if not `Function`.                                                              |
+| [`nonNil`](src/base/nonNil.ts)                               | Returns `true` if not `null` or `undefined`.                                                   |
+| [`nonNull`](src/base/nonNull.ts)                             | Returns `true` if not `null`.                                                                  |
+| [`nonNumber`](src/base/nonNumber.ts)                         | Returns `true` if not a `number`.                                                              |
+| [`nonScalar`](src/base/nonScalar.ts) 🆕                      | Returns `true` if not a scalar value (`string`, `number`, `boolean`, `symbol` and `bigint`).   |
+| [`nonString`](src/base/nonString.ts)                         | Returns `true` if not a `string`.                                                              |
+| [`nonSymbol`](src/base/nonSymbol.ts) 🆕                      | Returns `true` if not a `Symbol`.                                                              |
+| [`nonUndefined`](src/base/nonUndefined.ts) 🆕                | Returns `true` if not a `undefined`.                                                           |
+| [`parseJson`](src/base/parseJson.ts)                         | Safely parses a JSON string.                                                                   |
+| [`requireNonEmptyString`](src/base/requireNonEmptyString.ts) | Checks if a string is non-empty, otherwise throws an exception.                                |
+| [`requireNonNull`](src/base/requireNonNull.ts)               | Checks that a value is not `null`, otherwise throws an exception.                              |
+| [`requireString`](src/base/requireString.ts)                 | Checks that a value is a string, otherwise throws an exception.                                |
+| [`requireValidEmail`](src/base/requireValidEmail.ts)         | Checks that a string is a valid email, otherwise throws an exception.                          |
+| [`stringifyJson`](src/base/stringifyJson.ts)                 | Safely converts an object to a JSON string.                                                    |
+| [`toCamelCase`](src/base/toCamelCase.ts)                     | Converts a string to camelCase.                                                                |
+| [`toInteger`](src/base/toInteger.ts)                         | Converts a value to an integer.                                                                |
+| [`toKebabCase`](src/base/toKebabCase.ts)                     | Converts a string to kebab-case.                                                               |
+| [`toLowerCase`](src/base/toLowerCase.ts)                     | Converts a string to lowercase.                                                                |
+| [`toProperCase`](src/base/toProperCase.ts)                   | Converts a string to Proper Case (first letter of each word capitalized).                      |
+| [`toSnakeCase`](src/base/toSnakeCase.ts)                     | Converts a string to snake_case.                                                               |
+| [`toString`](src/base/toString.ts)                           | Converts a value to a string.                                                                  |
+| [`toUpperCase`](src/base/toUpperCase.ts)                     | Converts a string to uppercase.                                                                |
+| [`transpose`](src/base/transpose.ts)                         | Transposes a 2D array (matrix).                                                                |
+| [`versionCompare`](src/base/versionCompare.ts)               | Compares two versions.                                                                         |
 
 </details>
 

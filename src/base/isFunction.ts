@@ -9,6 +9,7 @@ import { ObjectTag } from "./types";
  *
  * @param   value - The value to check.
  * @returns `true` if the value is a function; otherwise, `false`.
+ * @see     nonFunction
  * @see     isFunctionLike
  * @since   1.0.0
  * @version 1.0.0

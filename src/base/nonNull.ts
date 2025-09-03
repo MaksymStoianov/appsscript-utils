@@ -3,7 +3,7 @@ import { isNull } from "./isNull";
 /**
  * ## nonNull
  *
- * Checks if the provided value is not `null`.
+ * Checks if the provided value is NOT `null`.
  *
  * @param   value - The value to check.
  * @returns `true` if the value is not `null`; otherwise, `false`.
