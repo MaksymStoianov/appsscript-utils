@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.3.0...v1.4.0) (2025-09-03)
+
+
+### Features
+
+* **appsscript/admin/isAdmin:** Add isAdmin utility function ([a4dec07](https://github.com/MaksymStoianov/appsscript-utils/commit/a4dec07d6803baf5975f5f21dffb3c65e3f64e15))
+* **appsscript/sheets/sortSheets:** Add sortSheets utility function ([669987f](https://github.com/MaksymStoianov/appsscript-utils/commit/669987f8ad89033d9e97900a0cda85fd2abdae0b))
+* **base/nonFunction:** Add nonFunction utility function ([505c685](https://github.com/MaksymStoianov/appsscript-utils/commit/505c68542b65583218cd4cb75c228cefe763ad22))
+* **base/nonUndefined:** Add nonUndefined utility function ([aeb1273](https://github.com/MaksymStoianov/appsscript-utils/commit/aeb1273480d238e1978af25a8ac1e6f4ea71921d))
+* **base:** Add isArray and nonArray utility functions ([ef073d3](https://github.com/MaksymStoianov/appsscript-utils/commit/ef073d3250a00ca0357a5ca12f558df9caa066d5))
+* **base:** Add nonScalar and nonSymbol utility function ([92abd17](https://github.com/MaksymStoianov/appsscript-utils/commit/92abd1717d9371c289cc9da368dbbf5b5b3ea888))
+
 ## [1.3.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.2.0...v1.3.0) (2025-09-02)
 
 
