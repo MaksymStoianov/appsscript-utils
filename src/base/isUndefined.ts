@@ -5,6 +5,7 @@
  *
  * @param   value - The value to check.
  * @returns `true` if the value is `undefined`; otherwise, `false`.
+ * @see     nonUndefined
  * @since   1.0.0
  * @version 1.0.0
  */

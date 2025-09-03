@@ -40,6 +40,7 @@ export { nonNil } from "./nonNil";
 export { nonNull } from "./nonNull";
 export { nonNumber } from "./nonNumber";
 export { nonString } from "./nonString";
+export { nonUndefined } from "./nonUndefined";
 
 export { requireNonEmptyString } from "./requireNonEmptyString";
 export { requireNonNull } from "./requireNonNull";

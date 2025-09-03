@@ -141,6 +141,7 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 | [`nonNull`](src/base/nonNull.ts)                             | Returns `true` if not `null`.                                             |
 | [`nonNumber`](src/base/nonNumber.ts)                         | Returns `true` if not a `number`.                                         |
 | [`nonString`](src/base/nonString.ts)                         | Returns `true` if not a `string`.                                         |
+| [`nonUndefined`](src/base/nonUndefined.ts)                   | Returns `true` if not a `undefined`.                                      |
 | [`parseJson`](src/base/parseJson.ts)                         | Safely parses a JSON string.                                              |
 | [`requireNonEmptyString`](src/base/requireNonEmptyString.ts) | Checks if a string is non-empty, otherwise throws an exception.           |
 | [`requireNonNull`](src/base/requireNonNull.ts)               | Checks that a value is not `null`, otherwise throws an exception.         |
