@@ -9,6 +9,7 @@ export { escapeRegExp } from "./escapeRegExp";
 export { escapeXml } from "./escapeXml";
 
 export { is2DArray } from "./is2DArray";
+export { isArray } from "./isArray";
 export { isBoolean } from "./isBoolean";
 export { isConsistent2DArray } from "./isConsistent2DArray";
 export { isEmail } from "./isEmail";
@@ -34,6 +35,7 @@ export { isValidSlug } from "./isValidSlug";
 export { isValidVersion } from "./isValidVersion";
 export { isVersionCompatible } from "./isVersionCompatible";
 
+export { nonArray } from "./nonArray";
 export { nonBoolean } from "./nonBoolean";
 export { nonEmpty } from "./nonEmpty";
 export { nonNil } from "./nonNil";
