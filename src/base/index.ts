@@ -39,7 +39,9 @@ export { nonEmpty } from "./nonEmpty";
 export { nonNil } from "./nonNil";
 export { nonNull } from "./nonNull";
 export { nonNumber } from "./nonNumber";
+export { nonScalar } from "./nonScalar";
 export { nonString } from "./nonString";
+export { nonSymbol } from "./nonSymbol";
 export { nonUndefined } from "./nonUndefined";
 
 export { requireNonEmptyString } from "./requireNonEmptyString";
