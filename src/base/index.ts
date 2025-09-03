@@ -38,6 +38,7 @@ export { isVersionCompatible } from "./isVersionCompatible";
 export { nonArray } from "./nonArray";
 export { nonBoolean } from "./nonBoolean";
 export { nonEmpty } from "./nonEmpty";
+export { nonFunction } from "./nonFunction";
 export { nonNil } from "./nonNil";
 export { nonNull } from "./nonNull";
 export { nonNumber } from "./nonNumber";
