@@ -233,29 +233,42 @@ Functions for working with file paths and URLs.
 
 <details><summary>More</summary>
 
+- [ ] `appsscript/base/sprintf`
+- [ ] `appsscript/base/formatDate`
 - [ ] `appsscript/sheets/prependColumn`
 - [ ] `appsscript/sheets/prependColumns`
 - [ ] `appsscript/sheets/insertSchema`
-- [ ] `appsscript/sheets/getSchema`
-- [ ] `appsscript/sheets/removeSchema`
-- [ ] `appsscript/sheets/getValues`
-- [ ] `appsscript/sheets/clearColumnsByConditional`
-- [ ] `appsscript/sheets/clearRowsByConditional`
-- [ ] `appsscript/sheets/deleteRowsByConditional`
-- [ ] `appsscript/sheets/deleteColumnsByConditional`
-- [ ] `appsscript/sheets/updateFormulas`
-- [ ] `appsscript/sheets/updateFormulas`
+- [ ] `appsscript/sheets/getSchema(steet: Sheet)`
+- [ ] `appsscript/sheets/removeSchema(steet: Sheet)`
+- [ ] `appsscript/sheets/getValues(steet: Sheet, config: Object)`
+- [ ] `appsscript/sheets/clearColumnsByConditional(steet: Sheet, callback: Function)`
+- [ ] `appsscript/sheets/clearRowsByConditional(steet: Sheet, callback: Function)`
+- [ ] `appsscript/sheets/deleteRowsByConditional(steet: Sheet, callback: Function)`
+- [ ] `appsscript/sheets/deleteColumnsByConditional(steet: Sheet, callback: Function)`
+- [ ] `appsscript/sheets/updateFormulas(steet: Sheet)`
+- [ ] `appsscript/sheets/getNamedRangeByName(name: string)`
 - [ ] `appsscript/sheets/abstract/Sheet`
+- [ ] `appsscript/sheets/abstract/Menu`
 - [ ] `appsscript/net/abstract/URL`
 - [ ] `appsscript/net/abstract/URLSearchParams`
-- [ ] `appsscript/base/sprintf`
 - [ ] `appsscript/crypto/base64decode`
 - [ ] `appsscript/crypto/base64encode`
 - [ ] `appsscript/crypto/md5`
 - [ ] `appsscript/crypto/sha1`
 - [ ] `appsscript/crypto/sha256`
 - [ ] `appsscript/crypto/sha512`
-- [ ] `appsscript/base/formatDate`
+- [ ] `appsscript/dive/createFolder(path: string, rootFolder?: Folder)`
+- [ ] `appsscript/classroom/getCourses()`
+- [ ] `base/getTriggerById(id)`
+- [ ] `base/flat(value: Array | Object, depth?: number)`
+- [ ] `base/namespace(obj: Object | Array, path: string | number | Array)`
+- [ ] `base/unique(arr: Array)`
+- [ ] `base/first(arr: Array)`
+- [ ] `base/last(arr: Array)`
+- [ ] `base/compact(arr: Array)`
+- [ ] `base/without(arr: Array, ...values: any)`
+- [ ] `base/intersect(arr: Array)`
+- [ ] `base/merge(text: string, fields: Object)` - Merges fields with text.
 - [ ] `base/date/now`
 - [ ] `base/date/diff`
 - [ ] `base/date/getDaysInMonth`
