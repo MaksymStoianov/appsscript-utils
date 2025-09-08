@@ -1,4 +1,4 @@
-import { doGridRangesIntersect, GridRange } from "@/appsscript/sheets";
+import { doGridRangesIntersect, GridRange } from "@/appsscript";
 import { describe, expect, it } from "vitest";
 
 describe("doGridRangesIntersect", () => {
