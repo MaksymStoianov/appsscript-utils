@@ -1,3 +1,3 @@
-#
+# Exceptions
 
-Этот пакет предназначен для всех классов исключений.
+This package is for all exception classes.

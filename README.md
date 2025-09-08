@@ -1,4 +1,4 @@
-\*\*<a name="top"></a>
+<a name="top"></a>
 
 # Utilities for Google Apps Script Projects
 
@@ -35,80 +35,140 @@ npm install github:MaksymStoianov/appsscript-utils#v1.0.1
 
 ## Functions by Category
 
-### 1. `appsscript` Module
+### 1. Google Apps Script Module
 
 Functions specifically designed for Google Apps Script environments, including utilities for working with spreadsheets.
 
 <details open><summary>Functions</summary>
 
-#### 1.1. `appsscript/base`
+#### 1.1. Google Base Methods
+
+Functions that enable various operations on a collection of base utility methods.
+
+<details open><summary>Functions</summary>
+
+| Function                                            | Description                            |
+| :-------------------------------------------------- | :------------------------------------- |
+| [`getByteSize`](src/appsscript/base/getByteSize.ts) | Returns the size of a string in bytes. |
+
+</details>
+
+#### 1.2. Google Admin SDK Directory Methods
+
+Functions that enable various operations on
+the [Admin SDK Directory Service](https://developers.google.cn/apps-script/advanced/admin-sdk-directory).
+
+#### 1.3. Google Drive Methods
+
+Functions that enable various operations on Google Drive.
+
+<details open><summary>Functions</summary>
+
+| Function | Description |
+| :------- | :---------- |
+|          |             |
+
+</details>
+
+#### 1.4. Google Docs Methods
+
+Functions that enable various operations on Google Docs.
+
+<details open><summary>Functions</summary>
+
+| Function | Description |
+| :------- | :---------- |
+|          |             |
+
+</details>
+
+#### 1.5. Google Forms Methods
+
+Functions that enable various operations on Google Forms.
+
+<details open><summary>Functions</summary>
+
+| Function | Description |
+| :------- | :---------- |
+|          |             |
+
+</details>
+
+#### 1.6. Google Sheets Methods
+
+Functions that enable various operations on Google Sheets.
+
+<details open><summary>Functions</summary>
+
+| Function                                                                         | Description                                                                                                                                   |
+| :------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`appendColumn`](src/appsscript/sheet/appendColumn.ts)                           | Appends a single column of data to the sheet.                                                                                                 |
+| [`appendColumns`](src/appsscript/sheet/appendColumns.ts)                         | Appends multiple columns of data to the sheet.                                                                                                |
+| [`appendRow`](src/appsscript/sheet/appendRow.ts)                                 | Appends a single row of data to the sheet.                                                                                                    |
+| [`appendRows`](src/appsscript/sheet/appendRows.ts)                               | Appends multiple rows of data to the sheet.                                                                                                   |
+| [`convertRichTextToHtml`](src/appsscript/sheet/convertRichTextToHtml.ts)         | Converts a [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value) to an HTML string.              |
+| [`doGridRangesIntersect`](src/appsscript/sheet/doGridRangesIntersect.ts)         | Checks if two [`GridRange`](src/appsscript/sheet/types/GridRange.ts) objects intersect.                                                       |
+| [`getColumnIndexByLetter`](src/appsscript/sheet/getColumnIndexByLetter.ts)       | Gets the column index by its letter (e.g., 'A' -> 1).                                                                                         |
+| [`getColumnLetterByIndex`](src/appsscript/sheet/getColumnLetterByIndex.ts)       | Gets the column letter by its index (e.g., 1 -> 'A').                                                                                         |
+| [`getColumnLetterByPosition`](src/appsscript/sheet/getColumnLetterByPosition.ts) | Gets the column letter by its position.                                                                                                       |
+| [`getColumnPositionByLetter`](src/appsscript/sheet/getColumnPositionByLetter.ts) | Gets the column position by its letter.                                                                                                       |
+| [`getSheetById`](src/appsscript/sheet/getSheetById.ts)                           | Gets a sheet by its ID.                                                                                                                       |
+| [`highlightHtml`](src/appsscript/sheet/highlightHtml.ts)                         | Adds syntax highlighting to an HTML string.                                                                                                   |
+| [`isCellGridRange`](src/appsscript/sheet/isCellGridRange.ts)                     | Checks if a [`GridRange`](src/appsscript/sheet/types/GridRange.ts) represents a single cell.                                                  |
+| [`isGridRangeContainedIn`](src/appsscript/sheet/isGridRangeContainedIn.ts)       | Checks if one [`GridRange`](src/appsscript/sheet/types/GridRange.ts) is contained within another.                                             |
+| [`isGridRangeSameDimensions`](src/appsscript/sheet/isGridRangeSameDimensions.ts) | Checks if two [`GridRange`](src/appsscript/sheet/types/GridRange.ts) objects have the same dimensions.                                        |
+| [`isRange`](src/appsscript/sheet/isRange.ts)                                     | Checks if an object is a [`Range`](https://developers.google.com/apps-script/reference/document/range).                                       |
+| [`isRichTextValue`](src/appsscript/sheet/isRichTextValue.ts)                     | Checks if an object is a [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value).                  |
+| [`isSheet`](src/appsscript/sheet/isSheet.ts)                                     | Checks if an object is a [`Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).                                    |
+| [`isSpreadsheet`](src/appsscript/sheet/isSpreadsheet.ts)                         | Checks if an object is a [`Spreadsheet`](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet).                        |
+| [`isTextStyle`](src/appsscript/sheet/isTextStyle.ts)                             | Checks if an object is a [`TextStyle`](https://developers.google.com/apps-script/reference/slides/text-style).                                |
+| [`isValidSheetId`](src/appsscript/sheet/isValidSheetId.ts) 🆕                    | Checks if a sheet id is valid.                                                                                                                |
+| [`isValidSheetName`](src/appsscript/sheet/isValidSheetName.ts)                   | Checks if a sheet name is valid.                                                                                                              |
+| [`isValidSpreadsheetId`](src/appsscript/sheet/isValidSpreadsheetId.ts)           | Checks if a spreadsheet ID is valid.                                                                                                          |
+| [`nonRange`](src/appsscript/sheet/nonRange.ts) 🆕                                | Checks if an object is not a [`Range`](https://developers.google.com/apps-script/reference/spreadsheet/range).                                |
+| [`nonSheet`](src/appsscript/sheet/nonSheet.ts) 🆕                                | Checks if an object is not a [`Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).                                |
+| [`parseA1Notation`](src/appsscript/sheet/parseA1Notation.ts)                     | Parses an A1 notation (e.g., 'A1:B2') into [`GridRange`](src/appsscript/sheet/types/GridRange.ts) components.                                 |
+| [`prependRow`](src/appsscript/sheet/prependRow.ts)                               | Prepends a single row of data to the sheet.                                                                                                   |
+| [`prependRows`](src/appsscript/sheet/prependRows.ts)                             | Prepends multiple rows of data to the sheet.                                                                                                  |
+| [`requireRange`](src/appsscript/sheet/requireRange.ts) 🆕                        | Checks if an object is not a [`Range`](https://developers.google.com/apps-script/reference/spreadsheet/range), otherwise throws an exception. |
+| [`requireSheet`](src/appsscript/sheet/requireSheet.ts) 🆕                        | Checks if an object is not a [`Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet), otherwise throws an exception. |
+| [`sortSheets`](src/appsscript/sheet/sortSheets.ts) 🆕                            | Sorts all sheets in a spreadsheet alphabetically by name.                                                                                     |
+| [`toA1Notation`](src/appsscript/sheet/toA1Notation.ts)                           | Converts a [`GridRange`](src/appsscript/sheet/types/GridRange.ts) to A1 notation.                                                             |
+
+</details>
+
+#### 1.7. Google Slides Methods
+
+Functions that enable various operations on Google Slides.
+
+<details open><summary>Functions</summary>
+
+| Function | Description |
+| :------- | :---------- |
+|          |             |
+
+</details>
+
+#### 1.8. Google UI Methods
+
+Functions that enable various operations on the user interface, including sidebars, dialogs, and web apps.
 
 <details open><summary>Functions</summary>
 
 | Function                                                            | Description                                                                                                       |
 | :------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
 | [`checkMultipleAccount`](src/appsscript/ui/checkMultipleAccount.ts) | Checks if multiple Google accounts are in use.                                                                    |
-| [`getByteSize`](src/appsscript/base/getByteSize.ts)                 | Returns the size of a string in bytes.                                                                            |
 | [`isHtmlOutput`](src/appsscript/ui/isHtmlOutput.ts)                 | Checks if an object is an [`HtmlOutput`](https://developers.google.com/apps-script/reference/html/html-output).   |
 | [`isTextOutput`](src/appsscript/ui/isTextOutput.ts)                 | Checks if an object is a [`TextOutput`](https://developers.google.com/apps-script/reference/content/text-output). |
 | [`isUi`](src/appsscript/ui/isUi.ts)                                 | Checks if an object is a [`Ui`](https://developers.google.com/apps-script/reference/base/ui).                     |
 
 </details>
 
-#### 1.2. `appsscript/admin` (Admin SDK Directory Service)
-
-<details open><summary>Functions</summary>
-
-| Function                                        | Description                                                                    |
-| :---------------------------------------------- | :----------------------------------------------------------------------------- |
-| [`isAdmin`](src/appsscript/admin/isAdmin.ts) 🆕 | Checks if the current user is an administrator of the Google Workspace domain. |
-
 </details>
 
-#### 1.3. `appsscript/sheets` (Google Sheets Utilities)
+### 2. `Base Utilities
 
-A collection of functions to simplify working with Google Sheets.
-
-<details open><summary>Functions</summary>
-
-| Function                                                                         | Description                                                                                                                      |
-| :------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| [`appendColumn`](src/appsscript/sheet/appendColumn.ts)                           | Appends a single column of data to the sheet.                                                                                    |
-| [`appendColumns`](src/appsscript/sheet/appendColumns.ts)                         | Appends multiple columns of data to the sheet.                                                                                   |
-| [`appendRow`](src/appsscript/sheet/appendRow.ts)                                 | Appends a single row of data to the sheet.                                                                                       |
-| [`appendRows`](src/appsscript/sheet/appendRows.ts)                               | Appends multiple rows of data to the sheet.                                                                                      |
-| [`convertRichTextToHtml`](src/appsscript/sheet/convertRichTextToHtml.ts)         | Converts a [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value) to an HTML string. |
-| [`doGridRangesIntersect`](src/appsscript/sheet/doGridRangesIntersect.ts)         | Checks if two [`GridRange`](src/appsscript/sheet/types/GridRange.ts) objects intersect.                                          |
-| [`getColumnIndexByLetter`](src/appsscript/sheet/getColumnIndexByLetter.ts)       | Gets the column index by its letter (e.g., 'A' -> 1).                                                                            |
-| [`getColumnLetterByIndex`](src/appsscript/sheet/getColumnLetterByIndex.ts)       | Gets the column letter by its index (e.g., 1 -> 'A').                                                                            |
-| [`getColumnLetterByPosition`](src/appsscript/sheet/getColumnLetterByPosition.ts) | Gets the column letter by its position.                                                                                          |
-| [`getColumnPositionByLetter`](src/appsscript/sheet/getColumnPositionByLetter.ts) | Gets the column position by its letter.                                                                                          |
-| [`getSheetById`](src/appsscript/sheet/getSheetById.ts)                           | Gets a sheet by its ID.                                                                                                          |
-| [`highlightHtml`](src/appsscript/sheet/highlightHtml.ts)                         | Adds syntax highlighting to an HTML string.                                                                                      |
-| [`isCellGridRange`](src/appsscript/sheet/isCellGridRange.ts)                     | Checks if a [`GridRange`](src/appsscript/sheet/types/GridRange.ts) represents a single cell.                                     |
-| [`isGridRangeContainedIn`](src/appsscript/sheet/isGridRangeContainedIn.ts)       | Checks if one [`GridRange`](src/appsscript/sheet/types/GridRange.ts) is contained within another.                                |
-| [`isGridRangeSameDimensions`](src/appsscript/sheet/isGridRangeSameDimensions.ts) | Checks if two [`GridRange`](src/appsscript/sheet/types/GridRange.ts) objects have the same dimensions.                           |
-| [`isRange`](src/appsscript/sheet/isRange.ts)                                     | Checks if an object is a [`Range`](https://developers.google.com/apps-script/reference/document/range).                          |
-| [`isRichTextValue`](src/appsscript/sheet/isRichTextValue.ts)                     | Checks if an object is a [`RichTextValue`](https://developers.google.com/apps-script/reference/spreadsheet/rich-text-value).     |
-| [`isSheet`](src/appsscript/sheet/isSheet.ts)                                     | Checks if an object is a [`Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).                       |
-| [`isSpreadsheet`](src/appsscript/sheet/isSpreadsheet.ts)                         | Checks if an object is a [`Spreadsheet`](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet).           |
-| [`isTextStyle`](src/appsscript/sheet/isTextStyle.ts)                             | Checks if an object is a [`TextStyle`](https://developers.google.com/apps-script/reference/slides/text-style).                   |
-| [`isValidSheetName`](src/appsscript/sheet/isValidSheetName.ts)                   | Checks if a sheet name is valid.                                                                                                 |
-| [`isValidSpreadsheetId`](src/appsscript/sheet/isValidSpreadsheetId.ts)           | Checks if a spreadsheet ID is valid.                                                                                             |
-| [`nonSheet`](src/appsscript/sheet/nonSheet.ts) 🆕                                | Checks if an object is not a [`Sheet`](https://developers.google.com/apps-script/reference/spreadsheet/sheet).                   |
-| [`parseA1Notation`](src/appsscript/sheet/parseA1Notation.ts)                     | Parses an A1 notation (e.g., 'A1:B2') into [`GridRange`](src/appsscript/sheet/types/GridRange.ts) components.                    |
-| [`prependRow`](src/appsscript/sheet/prependRow.ts)                               | Prepends a single row of data to the sheet.                                                                                      |
-| [`prependRows`](src/appsscript/sheet/prependRows.ts)                             | Prepends multiple rows of data to the sheet.                                                                                     |
-| [`sortSheets`](src/appsscript/sheet/sortSheets.ts) 🆕                            | Sorts all sheets in a spreadsheet alphabetically by name.                                                                        |
-| [`toA1Notation`](src/appsscript/sheet/toA1Notation.ts)                           | Converts a [`GridRange`](src/appsscript/sheet/types/GridRange.ts) to A1 notation.                                                |
-
-</details>
-
-</details>
-
-### 2. `base` Module
-
-General utility functions that can be useful in any JavaScript/TypeScript project.
+This package contains core utility functions that are not tied to a specific Apps Script service.
 
 <details open><summary>Functions</summary>
 
@@ -177,20 +237,28 @@ General utility functions that can be useful in any JavaScript/TypeScript projec
 
 </details>
 
-### 3. `exceptions` Module
+### 3. Exceptions Module
 
-A set of custom exception classes for more specific error handling.
+This package is for all exception classes.
 
 <details open><summary>Functions</summary>
 
-| Exception                                                                     | Description                         |
-| :---------------------------------------------------------------------------- | :---------------------------------- |
-| [`Exception`](src/exception/Exception.ts)                                     | Base exception class.               |
-| [`RuntimeException`](src/exception/RuntimeException.ts)                       | Exception for runtime errors.       |
-| [`EmptyStringException`](src/exception/EmptyStringException.ts)               | Exception for empty strings.        |
-| [`IllegalArgumentException`](src/exception/IllegalArgumentException.ts)       | Exception for invalid arguments.    |
-| [`InvalidEmailFormatException`](src/exception/InvalidEmailFormatException.ts) | Exception for invalid email format. |
-| [`NullPointerException`](src/exception/NullPointerException.ts)               | Exception for `null` values.        |
+| Exception                                                                                  | Description                                                                                                                                       |
+| :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ | --- |
+| [`AdminDirectoryException`](src/exception/appsscript/admin/AdminDirectoryException.ts)     | Represents an exception thrown when the Admin SDK Directory Service is not available or enabled.                                                  |
+| [`InvalidGridRangeException`](src/exception/appsscript/sheet/InvalidGridRangeException.ts) | Represents an exception thrown when an invalid [`GridRange`](src/appsscript/sheet/types/GridRange.ts) object is provided.                         |
+| [`InvalidRangeException`](src/exception/appsscript/sheet/InvalidRangeException.ts)         | Represents an exception thrown when an invalid [range](https://developers.google.com/apps-script/reference/spreadsheet/sheet) object is provided. |
+| [`InvalidSheetException`](src/exception/appsscript/sheet/InvalidSheetException.ts)         | Represents an exception thrown when an invalid [sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet) object is provided. |     |
+
+| Exception                                                                     | Description                                                                                     |
+| :---------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| [`Exception`](src/exception/Exception.ts)                                     | Base exception class.                                                                           |
+| [`RuntimeException`](src/exception/RuntimeException.ts)                       | Exception for runtime errors.                                                                   |
+| [`EmptyStringException`](src/exception/EmptyStringException.ts)               | Exception for empty strings.                                                                    |
+| [`IllegalArgumentException`](src/exception/IllegalArgumentException.ts)       | Exception for invalid arguments.                                                                |
+| [`InvalidEmailFormatException`](src/exception/InvalidEmailFormatException.ts) | Exception for invalid email format.                                                             |
+| [`InvalidStringException`](src/exception/InvalidStringException.ts)           | An exception thrown when a function expects a string, but receives a value of a different type. |
+| [`NullPointerException`](src/exception/NullPointerException.ts)               | Exception for `null` values.                                                                    |
 
 </details>
 
@@ -288,4 +356,4 @@ This project is licensed under the [LICENSE](LICENSE) file.
 
 ---
 
-⭐ **Like this project?** [Star our awesome repo »](https://github.com/MaksymStoianov/appsscript-utils)\*\*
+⭐ **Like this project?** [Star our awesome repo »](https://github.com/MaksymStoianov/appsscript-utils)
