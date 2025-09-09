@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.4.0...v1.5.0) (2025-09-09)
+
+
+### Features
+
+* **refactor:** add new helpers and exceptions ([984cff7](https://github.com/MaksymStoianov/appsscript-utils/commit/984cff70df985cabdebaf8aa05f1339d1bf2e535))
+
 ## [1.4.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.3.0...v1.4.0) (2025-09-03)
 
 
