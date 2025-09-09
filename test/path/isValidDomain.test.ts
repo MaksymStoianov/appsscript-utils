@@ -1,4 +1,4 @@
-import { isValidDomain } from "@/path";
+import { isValidDomain } from "@/net";
 import { describe, expect, it } from "vitest";
 
 describe("isValidDomain", () => {
