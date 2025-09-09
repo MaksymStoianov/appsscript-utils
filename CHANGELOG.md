@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.1](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.5.0...v1.5.1) (2025-09-09)
+
+
+### Bug Fixes
+
+* imports ([14698eb](https://github.com/MaksymStoianov/appsscript-utils/commit/14698eb18da88686f50b855637b9b454b4465473))
+* imports ([6ed4266](https://github.com/MaksymStoianov/appsscript-utils/commit/6ed426619eb071006e0cd0dc79d1d5794fd4256e))
+
 ## [1.5.0](https://github.com/MaksymStoianov/appsscript-utils/compare/v1.4.0...v1.5.0) (2025-09-09)
 
 
