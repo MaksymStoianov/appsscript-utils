@@ -64,5 +64,9 @@ export { highlightHtml } from "./highlightHtml";
 export { sortSheets } from "./sortSheets";
 
 export { parseA1Notation } from "./parseA1Notation";
+export {
+  parseA1Notations,
+  type A1NotationParseOptions
+} from "./parseA1Notations";
 
 export { toA1Notation } from "./toA1Notation";
