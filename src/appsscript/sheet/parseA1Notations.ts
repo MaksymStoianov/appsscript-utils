@@ -3,7 +3,7 @@ import { isObject, requireNonEmptyString } from "../../lang";
 import { parseA1Notation } from "./parseA1Notation";
 import { GridRange } from "./types";
 
-export interface ParseOptions {
+export interface A1NotationParseOptions {
   includeSheetNames?: boolean;
 }
 
@@ -14,7 +14,7 @@ export interface ParseOptions {
  * Validates the format and sheet name requirements based on the provided options.
  *
  * @param       {string} value - The input string to be parsed.
- * @param       {ParseOptions} options - An object with options for parsing.
+ * @param       {A1NotationParseOptions} options - An object with options for parsing.
  * @returns     {GridRange[]} An array of {@link GridRange} objects.
  * @throws      {@link Error}
  * @throws      {@link IllegalArgumentException}
@@ -24,7 +24,7 @@ export interface ParseOptions {
  * @see         {@link GoogleAppsScript.Spreadsheet.Sheet|Sheet}
  * @see         [Class Range](https://developers.google.com/apps-script/reference/spreadsheet/range)
  * @see         [Class Sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
- * @since       1.5.0
+ * @since       1.6.0
  * @version     1.0.0
  * @environment `Google Apps Script`, `Browser`
  * @author      Maksym Stoianov <stoianov.maksym@gmail.com>
@@ -32,7 +32,7 @@ export interface ParseOptions {
  */
 export function parseA1Notations(
   value: string,
-  { includeSheetNames }: ParseOptions
+  { includeSheetNames }: A1NotationParseOptions
 ): GridRange[] {
   if (arguments.length === 0) {
     throw new IllegalArgumentException();
