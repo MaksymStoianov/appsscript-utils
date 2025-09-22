@@ -1,12 +1,12 @@
 <a name="top"></a>
 
-![google-apps-script-utils-author-MaksymStoianov-artist-DarynaMikhailenko.jpg](docs/assets/google-apps-script-utils-author-MaksymStoianov-artist-DarynaMikhailenko.jpg)
+![Project banner for Google Apps Script Utils](docs/assets/google-apps-script-utils-author-MaksymStoianov-artist-DarynaMikhailenko.jpg)
 
 <p align="right">
   <i>Artist: <a href="https://darynamikhailenko.com/?utm_source=github&utm_medium=readme&utm_campaign=appsscript-utils&utm_content=banner_artist_credit" title="Portfolio of Daryna Mikhailenko, the artist">Daryna Mikhailenko</a></i>
 </p>
 
-# Utilities for Google Apps Script Projects
+# Utilities for Google Apps Script™ projects
 
 [![Built%20with-clasp](https://img.shields.io/badge/Built%20with-clasp-4285f4.svg)](https://github.com/google/clasp)
 [![License](https://img.shields.io/github/license/MaksymStoianov/appsscript-utils?label=License)](LICENSE)
@@ -54,7 +54,7 @@ Functions that enable various operations on a collection of base utility methods
 <details open><summary>Functions</summary>
 
 | Function                                            | Description                            |
-| :-------------------------------------------------- | :------------------------------------- |
+|:----------------------------------------------------|:---------------------------------------|
 | [`getByteSize`](src/appsscript/base/getByteSize.ts) | Returns the size of a string in bytes. |
 
 </details>
@@ -71,7 +71,7 @@ Functions that enable various operations on Google Drive.
 <details open><summary>Functions</summary>
 
 | Function | Description |
-| :------- | :---------- |
+|:---------|:------------|
 |          |             |
 
 </details>
@@ -83,7 +83,7 @@ Functions that enable various operations on Google Docs.
 <details open><summary>Functions</summary>
 
 | Function | Description |
-| :------- | :---------- |
+|:---------|:------------|
 |          |             |
 
 </details>
@@ -95,7 +95,7 @@ Functions that enable various operations on Google Forms.
 <details open><summary>Functions</summary>
 
 | Function | Description |
-| :------- | :---------- |
+|:---------|:------------|
 |          |             |
 
 </details>
@@ -107,7 +107,7 @@ Functions that enable various operations on Google Sheets.
 <details open><summary>Functions</summary>
 
 | Function                                                                         | Description                                                                                                                                   |
-| :------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+|:---------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 | [`appendColumn`](src/appsscript/sheet/appendColumn.ts)                           | Appends a single column of data to the sheet.                                                                                                 |
 | [`appendColumns`](src/appsscript/sheet/appendColumns.ts)                         | Appends multiple columns of data to the sheet.                                                                                                |
 | [`appendRow`](src/appsscript/sheet/appendRow.ts)                                 | Appends a single row of data to the sheet.                                                                                                    |
@@ -150,7 +150,7 @@ Functions that enable various operations on Google Slides.
 <details open><summary>Functions</summary>
 
 | Function | Description |
-| :------- | :---------- |
+|:---------|:------------|
 |          |             |
 
 </details>
@@ -162,7 +162,7 @@ Functions that enable various operations on the user interface, including sideba
 <details open><summary>Functions</summary>
 
 | Function                                                            | Description                                                                                                       |
-| :------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
+|:--------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|
 | [`checkMultipleAccount`](src/appsscript/ui/checkMultipleAccount.ts) | Checks if multiple Google accounts are in use.                                                                    |
 | [`isHtmlOutput`](src/appsscript/ui/isHtmlOutput.ts)                 | Checks if an object is an [`HtmlOutput`](https://developers.google.com/apps-script/reference/html/html-output).   |
 | [`isTextOutput`](src/appsscript/ui/isTextOutput.ts)                 | Checks if an object is a [`TextOutput`](https://developers.google.com/apps-script/reference/content/text-output). |
@@ -179,7 +179,7 @@ This package contains core utility functions that are not tied to a specific App
 <details open><summary>Functions</summary>
 
 | Function                                                            | Description                                                                                    |
-| :------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
+|:--------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
 | [`chunk`](src/lang/array/chunk.ts)                                  | Splits an array into chunks of a specified size.                                               |
 | [`decodeHtml`](src/html/decodeHtml.ts)                              | Decodes HTML entities.                                                                         |
 | [`encodeHtml`](src/html/encodeHtml.ts)                              | Encodes a string for safe use in HTML.                                                         |
@@ -250,14 +250,14 @@ This package is for all exception classes.
 <details open><summary>Functions</summary>
 
 | Exception                                                                                  | Description                                                                                                                                       |
-| :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+|:-------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [`AdminDirectoryException`](src/exception/appsscript/admin/AdminDirectoryException.ts)     | Represents an exception thrown when the Admin SDK Directory Service is not available or enabled.                                                  |
 | [`InvalidGridRangeException`](src/exception/appsscript/sheet/InvalidGridRangeException.ts) | Represents an exception thrown when an invalid [`GridRange`](src/appsscript/sheet/types/GridRange.ts) object is provided.                         |
 | [`InvalidRangeException`](src/exception/appsscript/sheet/InvalidRangeException.ts)         | Represents an exception thrown when an invalid [range](https://developers.google.com/apps-script/reference/spreadsheet/sheet) object is provided. |
 | [`InvalidSheetException`](src/exception/appsscript/sheet/InvalidSheetException.ts)         | Represents an exception thrown when an invalid [sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet) object is provided. |
 
 | Exception                                                                     | Description                                                                                     |
-| :---------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+|:------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------|
 | [`Exception`](src/exception/Exception.ts)                                     | Base exception class.                                                                           |
 | [`RuntimeException`](src/exception/RuntimeException.ts)                       | Exception for runtime errors.                                                                   |
 | [`EmptyStringException`](src/exception/EmptyStringException.ts)               | Exception for empty strings.                                                                    |
@@ -275,7 +275,7 @@ Functions for working with file paths and URLs.
 <details open><summary>Functions</summary>
 
 | Function                                         | Description                                                     |
-| :----------------------------------------------- | :-------------------------------------------------------------- |
+|:-------------------------------------------------|:----------------------------------------------------------------|
 | [`isAbsolute`](src/net/path/isAbsolute.ts)       | Checks if a path is absolute.                                   |
 | [`isRelative`](src/net/path/isRelative.ts)       | Checks if a path is relative.                                   |
 | [`isValidDomain`](src/net/path/isValidDomain.ts) | Checks if a string is a valid domain name.                      |
@@ -290,7 +290,7 @@ Functions for working with file paths and URLs.
 <details open><summary>Functions</summary>
 
 | Abstract                     | Description |
-| :--------------------------- | :---------- |
+|:-----------------------------|:------------|
 | [`Class`](src/lang/Class.ts) |             |
 
 </details>
@@ -298,7 +298,7 @@ Functions for working with file paths and URLs.
 <details open><summary>Functions</summary>
 
 | Interface                          | Description              |
-| :--------------------------------- | :----------------------- |
+|:-----------------------------------|:-------------------------|
 | [`Iterator`](src/lang/Iterator.ts) | Interface for iterators. |
 
 </details>
